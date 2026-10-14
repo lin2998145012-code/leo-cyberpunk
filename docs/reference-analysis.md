@@ -104,8 +104,10 @@
 
 ## 7. 可以直接用的提示词片段
 
+提示词里只描述画面特征，不写作品名和工作室名。Higgsfield 等平台的版权过滤会拦截这些名字。
+
 ```
-2D anime, Studio Trigger style, flat cel shading, single hard shadow layer,
+2D anime TV series style, flat cel shading, single hard shadow layer,
 thin clean lineart, large shadow areas tinted deep indigo and violet (no grey shadows),
 hard-edged cyan rim light, saturated teal and red neon palette with electric yellow accents,
 blurred background, high contrast

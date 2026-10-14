@@ -66,7 +66,9 @@
 
 ## 3. 工具选型
 
-> AI 工具更新很快，下面是选型思路和常见选择。动手前先去各家官网看一下最新版本，同一类工具挑一个用熟就行。
+> **本项目全程使用 Higgsfield。** 每一步对应 Higgsfield 的哪个功能、人物一致性怎么保证，见 [Higgsfield 制作流程](higgsfield-workflow.md)。下面是通用的选型思路，留作参考。
+>
+> 提示词里不要写作品名、工作室名或艺术家名字，Higgsfield 的版权过滤会拦截。
 
 ### 3.1 图像（画风、角色、关键帧）
 
@@ -129,7 +131,7 @@
 - 写一段**固定的风格提示词**，所有镜头复用：
 
 ```
-anime screencap, Studio Trigger style, flat cel shading, single hard shadow layer,
+2D anime TV series style, flat cel shading, single hard shadow layer,
 thin clean lineart, large shadow areas tinted deep indigo and violet (no grey shadows),
 hard-edged cyan rim light, saturated teal and red neon palette with electric yellow accents,
 cyberpunk city at night, dynamic perspective, 2D animation
