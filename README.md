@@ -2,6 +2,7 @@
 
 用 AI 图像 / 视频生成工具制作《赛博朋克：边缘行者》风格的原创动画短片。
 
+- [**系列方案《ECHOES》（当前方向）**](docs/series-proposal.md)：恋人主线，6 集，故事和人物内核
 - [实现方案](docs/production-plan.md)：风格拆解、工具选型、制作流程、后期、预算和路线图
 - [原片参考分析](docs/reference-analysis.md)：基于官方预告实测的色彩、作画帧率、剪辑节奏和特效清单
 - [前期制作](docs/preproduction.md)：优质 AIGC 作品的制作流程，本片的素材清单和制作顺序
