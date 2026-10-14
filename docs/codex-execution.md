@@ -124,12 +124,12 @@ Plain light grey background, flat even lighting, no text, no labels, no numbers,
 
 ### {MILES}
 ```
-Miles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.
+Miles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length all-black hair tied into a short stubby ponytail at the nape, long uneven bangs, no dyed streaks, no shaved sides; a cheap white courier earpiece with a short microphone boom on his left ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.
 ```
 
 ### {KEEP_MILES}
 ```
-The character is Miles from our character references. Keep his face, tired eyes, hair and ponytail, cyan streak, earpiece, rain poncho, jumpsuit, delivery bag, prosthetic leg and colors exactly the same. Do not mirror him: the cyan streak is in his left bangs, the earpiece on his right ear, the prosthetic on his left leg. In a front view, his left side appears on the right side of the image.
+The character is Miles from our character references. Keep his face, tired eyes, hair and ponytail, earpiece, rain poncho, jumpsuit, delivery bag, prosthetic leg and colors exactly the same. The earpiece is on his left ear and the prosthetic on his left leg, the same as in the master images. In a front view, his left side appears on the right side of the image.
 ```
 
 ### {ORIGINAL}
@@ -146,9 +146,9 @@ Mia: a 7-year-old girl, round face, big eyes with pale teal-grey irises, short b
 
 | 锚点 | 正确 | 常见错误 |
 | --- | --- | --- |
-| 发型 | 及下巴的黑色乱发，后颈短小揪，**左边**刘海一缕青色挑染，**不剃发** | 剃了两侧、画了剃发图案、挑染在右边、头发太短 |
+| 发型 | 及下巴的纯黑乱发，后颈短小揪，**没有挑染**，**不剃发** | 剃了两侧、画了剃发图案、加了挑染、头发太短 |
 | 眼睛 | 半睁的倦眼，有黑眼圈 | 眼睛睁得很大很有神、没有黑眼圈 |
-| 耳机 | **右耳**白色派单耳机，短麦克风杆 | 画到左耳、画成耳钉 |
+| 耳机 | **左耳**白色派单耳机，短麦克风杆 | 画到右耳、画成耳钉 |
 | 雨披 | 深青色兜帽雨披，长到大腿，下摆青色反光带，**背后**白色大 Z | 画成夹克、画了大翻领、长度太短、Z 在胸前 |
 | 义肢 | **左小腿**枪灰色，5 颗灯，工作服**左**裤腿在膝盖处剪掉 | 画到右腿、两条腿都正常 |
 
@@ -280,6 +280,32 @@ No text.
 
 ---
 
+### 阶段 0.5 收尾：生成母版（导演确认后执行）
+
+**导演补充决定（2026-10-15）**：取消青色挑染，头发统一纯黑。
+
+审查后的推荐（**导演在对话里确认后才执行**；如果导演选了别的版本，以导演的选择为准）：
+
+| 母版 | 来源 | 理由 |
+| --- | --- | --- |
+| 定妆照 | `portrait_fix_v1.png`，**水平翻转** | 暖肤色加紫色硬阴影最符合设定，背景最平。三个版本的脸几乎一样，v1 的阴影最接近原作 |
+| 全身图 | `full_fix_v2.png`，不翻转 | 目镜推到头上，和定妆照的状态一致；5 颗灯、第 3 颗暗、裤腿剪断都对。v1 眼前多了一副半透明镜片，v3 的目镜在眼前，和定妆照对不上 |
+
+**为什么定妆照要翻转**：原来的定妆照和全身图互为镜像，定妆照的耳机和小揪在画面左边，全身图的在画面右边。全身图的义肢在左腿，和故事一致，所以翻转定妆照，让两张对齐。翻转后耳机在角色的**左耳**，义肢在**左腿**，档案已经按这个更新。这是导演允许镜像之后的特例，其他图仍然不要镜像。
+
+**执行**：
+1. 把 `portrait_fix_v1.png` 水平翻转，存为 `assets/characters/miles/miles_portrait_master.png`
+2. 把 `full_fix_v2.png` 原样复制为 `assets/characters/miles/miles_full_master.png`
+3. 在 `assets/selections.md` 里写：
+```
+miles_portrait_fix: v1（水平翻转）
+miles_full_fix: v2
+```
+4. **斜挎包的背带以全身母版为准**：翻转后，定妆照的背带方向和全身图不一致。阶段 1 生成设定总图时，背带方向以全身母版为准。
+5. 提交、推送，然后直接进入阶段 1，不用再停。
+
+---
+
 ## 4. 阶段 1：Miles 设定总图
 
 **开始前**：读 `assets/selections.md`，把阶段 0.5 选中的**修整版**定妆照复制成 `assets/characters/miles/miles_portrait_master.png`，修整版全身图复制成 `assets/characters/miles/miles_full_master.png`。**选定之后不再重新生成这两张。**
@@ -297,7 +323,7 @@ No text.
 A professional character model sheet of Miles in one image. Layout:
 Left two thirds: four full-body views standing side by side at exactly the same height and proportions: front view, three-quarter view of his left side, exact side profile of his left side, back view. Neutral standing pose, arms slightly away from the body; the back view shows the large white Z on the back of the poncho and the short ponytail.
 Right third, top: six head studies of the same face: front, three-quarter left, profile left, three-quarter right, looking up, looking down.
-Right third, bottom: close-ups of the prosthetic left lower leg, the white earpiece on his right ear, his tired eyes with dark under-eye circles, the hem of the poncho with the cyan reflective band, the AR visor.
+Right third, bottom: close-ups of the prosthetic left lower leg, the white earpiece on his left ear, his tired eyes with dark under-eye circles, the hem of the poncho with the cyan reflective band, the AR visor.
 Along the bottom edge: a row of plain color swatches of his colors.
 {SHEET}
 {MILES}
