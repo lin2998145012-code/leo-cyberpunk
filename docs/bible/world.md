@@ -185,7 +185,7 @@ Lonely, quiet atmosphere. Extreme wide shot.
 | 道具 | 设计 | 用在哪里 |
 | --- | --- | --- |
 | **电动车** | ZENITH 配发的旧款电动踏板车，车身深青色，车把上有手机支架，挡泥板有凹痕 | 镜头 3、5、15 |
-| **配送箱** | 方形背包式，深青色，有青色 ZENITH 标志，边角磨损 | 全片 |
+| **配送包** | 斜挎在胸前的防水配送包，深青色，卷口封口，有青色 ZENITH 标志，边角磨损 | 全片 |
 | **手机** | 廉价款，屏幕右上角有一道裂痕，界面在后期加 | 镜头 2、5、11、38、45 |
 | **小蛋糕** | 压扁了的纸杯蛋糕，白色奶油上有一颗小草莓，装在透明塑料盒里 | 镜头 43 |
 | **打火机** | 透明塑料的廉价打火机，看得见里面的燃料，砂轮式 | 镜头 43–47 |
@@ -199,10 +199,10 @@ plain light grey background, flat even lighting, no text, consistent proportions
 thin clean dark lineart of even weight.
 ```
 
-例如配送箱：
+例如配送包：
 ```
-Prop design sheet of a square backpack-style courier delivery box, deep teal with a cyan
-Z-shaped logo, worn corners and scratches, shoulder straps, multiple orthographic views
+Prop design sheet of a teal waterproof courier delivery bag worn slung across the chest,
+a cyan Z-shaped logo, a roll-top closure, worn edges and scratches, multiple orthographic views
 (front, side, back, top), plain light grey background, flat even lighting, no text,
 consistent proportions.
 2D anime TV series style, flat cel shading with a single hard-edged shadow tone,
