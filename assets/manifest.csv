@@ -1,0 +1,21 @@
+task,file,model,size,quality,refs,attempt,self_check,notes
+T1.1,assets/_review/attempts/miles_c01_a1.png,builtin-default-undisclosed,1024x1536,not-exposed,,1,fail,挑染在角色右侧、耳钉在角色左耳；背景有渐变；原提示词未改。工具不公开模型和质量参数。
+T1.1,assets/_review/attempts/miles_c01_a2.png,builtin-default-undisclosed,1024x1536,not-exposed,,2,fail,挑染在角色右侧、耳钉在角色左耳；左眉疤、左颈接口、左义肢位置正确；义肢灯只有四颗清晰可见；背景渐变
+T1.1,assets/_review/attempts/miles_c01_a3.png,builtin-default-undisclosed,1024x1536,not-exposed,,3,fail,挑染在角色右侧、耳钉在角色左耳；左眉疤不清晰；左颈接口与左义肢位置正确；背景渐变
+T1.1,assets/_review/attempts/miles_c01_a4.png,builtin-default-undisclosed,1024x1536,not-exposed,,4,fail,左右已修正；左眉竖疤未清楚切断眉毛、义肢仅四颗灯；背景渐变
+T1.2,assets/_review/attempts/mia_c01_a1.png,builtin-default-undisclosed,1024x1536,not-exposed,,1,fail,未见文字；双手在头发边缘而未持住纸冠；袖口露出手指，背景渐变
+T1.1,assets/_review/attempts/miles_c01_a5.png,builtin-default-undisclosed,1024x1536,not-exposed,,5,fail,左眉疤仍画到角色右眉；义肢四颗灯；挑染、耳钉、接口和义肢左右正确
+T1.2,assets/_review/attempts/mia_c01_a2.png,builtin-default-undisclosed,1024x1536,not-exposed,,2,fail,左手扶冠、右手在头发边缘；未见文字；浅灰背景略有明暗变化
+T1.3a,assets/characters/robot/robot_c01.png,builtin-default-undisclosed,1536x1024,not-exposed,,1,unsure,正侧背三视图齐全；蛋形白色轮式机器人、笑脸和青色Z形图案可见；浅灰背景有轻微明暗变化；模型及质量参数不可核实; 实际尺寸 1536x1024，文档要求 1792x1008
+T1.1,assets/_review/attempts/miles_c01_a6.png,builtin-default-undisclosed,1024x1536,not-exposed,,6,fail,补充左右说明后第3次：两耳均有耳饰、左眉疤不清楚、义肢仍仅四颗灯
+T1.2,assets/_review/attempts/mia_c01_a3.png,builtin-default-undisclosed,1024x1536,not-exposed,,3,fail,第3次仍只有一只手接触纸冠，另一只手位于头发边缘；手指露出袖口
+T1.4,assets/locations/L1_shaft/L1_c01.png,builtin-default-undisclosed,1536x1024,not-exposed,,1,unsure,天井深度和层叠环绕高架可见，靛紫夜景；未见人物或可读文字；视角略偏心；模型质量不可核实; 实际尺寸 1536x1024，文档要求 1792x1008
+T1.1,assets/_review/attempts/miles_c02_a1.png,builtin-default-undisclosed,1024x1536,not-exposed,,1,fail,眉疤在角色右眉；义肢指示灯多于五颗；其他左右锚点正确
+T1.2,assets/characters/mia/candidates/mia_c02.png,builtin-default-undisclosed,1024x1536,not-exposed,,1,pass,无可读文字；双手抬至歪纸冠两侧，灰青眼、黑短发、芥末金毛衣；指尖露出袖口，右侧手与冠边接触不清晰，供导演复核
+T1.3b,assets/characters/drone/drone_c01.png,builtin-default-undisclosed,1536x1024,not-exposed,,1,unsure,正面、侧面、俯视和红色机械眼特写齐全；俯视可辨四旋翼；未见文字；侧面稍带三分之四透视; 实际尺寸 1536x1024，文档要求 1792x1008
+T1.1,assets/_review/attempts/miles_c02_a2.png,builtin-default-undisclosed,1024x1536,not-exposed,,2,fail,眉疤在角色右眉；义肢只有三颗灯；外套下缘多出类似符号的图案
+T1.2,assets/_review/attempts/mia_c03_a1.png,builtin-default-undisclosed,1024x1536,not-exposed,,1,fail,双手接触头发而未持住纸冠；其余黑短发、灰青眼、金色毛衣与纸冠可见
+T1.3c,assets/characters/mascot/mascot_c01.png,builtin-default-undisclosed,1536x1024,not-exposed,,1,unsure,正面和三分之四视图齐全；闭眼笑、拇指向上、双腿正常；无文字；画面新增头盔和配送背包; 实际尺寸 1536x1024，文档要求 1792x1008
+T0.1,assets/_review/stage0_attempts/miles_portrait_c01_a1.png,builtin-default-undisclosed,1312x1199,not-exposed,refs/style/char_david_smile.jpg;refs/style/char_lucy_closeup.jpg;refs/style/char_gloria_profile.jpg;refs/style/char_david_teal.jpg,1,fail,无文字；窄眼和紫色硬边阴影接近参考，但皮肤及背景有渐变；疤和颈部接口在角色右侧，目镜未推到头上；右侧剃发出现参考角色式折线纹路。模型和质量参数不公开。; 实际尺寸 1312x1199，要求 1024x1024，未裁剪或缩放
+T0.1,assets/_review/stage0_attempts/miles_portrait_c01_a2.png,builtin-default-undisclosed,1145x1374,not-exposed,refs/style/char_david_smile.jpg;refs/style/char_lucy_closeup.jpg;refs/style/char_gloria_profile.jpg;refs/style/char_david_teal.jpg,2,fail,无文字，目镜已抬起，左眉疤与左颈接口位置正确；挑染在角色右边、剃短与三颗耳钉在角色左边；阴影硬边偏紫，但皮肤及背景仍有渐变，目镜较厚。; 实际尺寸 1145x1374，要求 1024x1024，未裁剪或缩放
+T0.1,assets/_review/stage0_attempts/miles_portrait_c01_a3.png,builtin-default-undisclosed,1672x941,not-exposed,refs/style/char_david_smile.jpg;refs/style/char_lucy_closeup.jpg;refs/style/char_gloria_profile.jpg;refs/style/char_david_teal.jpg,3,fail,无文字，目镜抬起，左挑染、右耳三颗银钉正确；眉疤与颈部接口在角色右侧，剃发带有参考角色折线纹路；窄眼和大块紫影接近参考，背景及皮肤仍有渐变。连续3次不合格，按文档暂停；作为c01待修订版本保留。; 实际尺寸 1672x941，要求 1024x1024，未裁剪或缩放
