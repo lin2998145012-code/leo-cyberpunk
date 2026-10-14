@@ -21,7 +21,7 @@ Higgsfield 上的 Wan 3.0 于 2026 年 8 月上线，分 **Wan 3.0** 和 **Wan 3
 
 1. **首尾帧模式**可以直接套用一致性方案里的"锁 5"：两张关键帧夹住一段视频。
 2. **10 张参考图**装得下设定包里最重要的 10 张。
-3. **参考视频**也许能代替 Kling 的 Motion Control：你拍一段动作，让林迟照着做，而且是免费的。这一点**官方没有明说能转移动作**，要先测。
+3. **参考视频**也许能代替 Kling 的 Motion Control：你拍一段动作，让 Miles 照着做，而且是免费的。这一点**官方没有明说能转移动作**，要先测。
 
 ### 免费的规则（来自 Higgsfield 帮助中心）
 
@@ -42,7 +42,7 @@ Higgsfield 上的 Wan 3.0 于 2026 年 8 月上线，分 **Wan 3.0** 和 **Wan 3
 
 **这 7 天要把所有带人物的视频镜头都生成完。**
 
-原因是一致性方案里有一条规则：**同一部片子尽量只用一个视频模型**，中途换模型会让角色偏差叠加。如果这周用 Wan 3.0 做了一半，剩下的过期后再换 Kling 来做，两边的林迟很可能不像同一个人。
+原因是一致性方案里有一条规则：**同一部片子尽量只用一个视频模型**，中途换模型会让角色偏差叠加。如果这周用 Wan 3.0 做了一半，剩下的过期后再换 Kling 来做，两边的 Miles 很可能不像同一个人。
 
 具体做法：
 - 每个人物镜头至少留 **3 条可用的版本**，过期后不用再补
@@ -60,7 +60,7 @@ Higgsfield 上的 Wan 3.0 于 2026 年 8 月上线，分 **Wan 3.0** 和 **Wan 3
 
 | 天 | 你在 Higgsfield 上做 | 我做 |
 | --- | --- | --- |
-| **第 1 天** | ① 确认上面三件事；② 用 Nano Banana Pro 做林迟母版，再生成设定包 14 张；③ 同时用 Wan 3.0 免费跑**镜头 1**（城市俯瞰），测试 Wan 能不能保持 2D 动画风格 | 你把设定包和镜头 1 的结果发给我，我跑一致性检查和风格分析 |
+| **第 1 天** | ① 确认上面三件事；② 用 Nano Banana Pro 做 Miles 母版，再生成设定包 14 张；③ 同时用 Wan 3.0 免费跑**镜头 1**（城市俯瞰），测试 Wan 能不能保持 2D 动画风格 | 你把设定包和镜头 1 的结果发给我，我跑一致性检查和风格分析 |
 | **第 2 天** | ① 设定包里偏了的重做；② 做 4 个测试镜头的关键帧；③ 每个测试镜头用两种模式生成：A 首尾帧模式，B 参考图模式 | 检查测试结果：哪种模式更一致，Wan 能不能当主力模型 |
 | **第 3 天** | ① 拍你自己表演的动作视频（见 5.3）；② 测试 Wan 的参考视频能不能转移动作 | 根据测试结果，**写出剩下所有镜头的关键帧和视频提示词** |
 | **第 4 天** | 第一、二段（雨夜、堵死）：关键帧 → 视频，每个镜头 3 条以上 | 逐批检查一致性，标出返工镜头 |
@@ -80,7 +80,7 @@ Higgsfield 上的 Wan 3.0 于 2026 年 8 月上线，分 **Wan 3.0** 和 **Wan 3
 
 **角色描述块**
 ```
-Lin Chi: a 19-year-old slim young man, narrow face, sharp chin, narrow upturned eyes with
+Miles: a 19-year-old slim young man, narrow face, sharp chin, narrow upturned eyes with
 pale teal-grey irises, a vertical scar cutting through his left eyebrow, short black hair
 with the right side shaved and a single cyan streak in his left fringe, three small silver
 studs in his right ear, a square metal data port on the left side of his neck with a tiny
@@ -130,7 +130,7 @@ no 3D look.
 **关键帧**（Nano Banana Pro，Multi-reference；图 1 正面脸、图 2 3/4 脸、图 3 侧脸、图 4 正面全身）：
 
 ```
-Images 1-4 are reference sheets of the same character, Lin Chi. Keep his face, hair, scar,
+Images 1-4 are reference sheets of the same character, Miles. Keep his face, hair, scar,
 ear studs, neck port, jacket, prosthetic leg and colors exactly as in the references.
 Close-up, three-quarter view of the left side of his face, so the cyan streak and the
 eyebrow scar are visible. He sits on an electric scooter in the rain, looking down at a phone
@@ -166,7 +166,7 @@ his face. Static camera, very slight push in.
 **关键帧**（Nano Banana Pro，参考图 1 正面全身、2 3/4 全身、3 正侧面全身、4 义肢特写）：
 
 ```
-Images 1-4 are reference sheets of the same character, Lin Chi. Keep his face, hair, scar,
+Images 1-4 are reference sheets of the same character, Miles. Keep his face, hair, scar,
 ear studs, neck port, jacket, prosthetic leg and colors exactly as in the references.
 Low-angle full shot. He has just landed in a crouch on the roof of a car in a traffic jam,
 one hand on the roof, his prosthetic left leg bent under him, the roof dented around his
@@ -207,7 +207,7 @@ lights far below, rain, small neon signs, deep indigo and violet, cyan accents.
 2D anime background art, flat colors, clean shapes, high contrast. 16:9.
 ```
 
-**② 人物**（Nano Banana Pro，Multi-reference；参考图用设定包的全身图）：中景的林迟在半空起跳，从上方俯拍，平光、浅灰背景。
+**② 人物**（Nano Banana Pro，Multi-reference；参考图用设定包的全身图）：中景的 Miles 在半空起跳，从上方俯拍，平光、浅灰背景。
 
 **③ 合成**（Nano Banana 编辑；图 1 = 人物，图 2 = 背景）：
 ```
@@ -230,7 +230,7 @@ the camera tilts down slightly to follow him, strong fisheye perspective.
 
 **首帧**（Nano Banana Pro，图 1 正面脸、图 2 3/4 脸、图 3 推起目镜的正脸、图 4 筋疲力尽的表情）：
 ```
-Images 1-4 are reference sheets of the same character, Lin Chi. Keep his face, hair, scar,
+Images 1-4 are reference sheets of the same character, Miles. Keep his face, hair, scar,
 ear studs, neck port, jacket and colors exactly as in the references.
 Close-up, front view. He kneels in a spotless white lobby, exhausted and out of breath,
 sweat on his face, the thin cyan AR visor still over his eyes.

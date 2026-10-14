@@ -28,7 +28,7 @@
 | 身份注册 | **Elements** | 保存成可复用的角色，在 Kling、Seedance、Cinema Studio 里用 @ 调用，跨镜头保持身份 |
 | 身份注册（待测试） | **Soul ID** | 用 20–80 张图训练身份。官方说虚构角色可以先生成肖像再训练，但 Soul 模型偏摄影风格，二次元能不能用要先测 |
 | 人物镜头视频 | **Kling 3.0** | 首帧 + 尾帧 + Elements；支持多镜头；有 Impact、Bullet Time 等变速，片长 3–15 秒 |
-| 动作镜头视频 | **Kling 3.0 Motion Control** | **你自己拍一段动作视频，让林迟照着做**。官方说会保留角色的脸和画风，适合跳跃、落地、格斗 |
+| 动作镜头视频 | **Kling 3.0 Motion Control** | **你自己拍一段动作视频，让 Miles 照着做**。官方说会保留角色的脸和画风，适合跳跃、落地、格斗 |
 | 人物镜头、空镜（本周免费） | **Wan 3.0 / Wan 3.0 Prime** | 首帧 + 尾帧，或者最多 10 张参考图加 5 段参考视频；2–30 秒。你的 Plus 账号本周在网页上不限量，用法见 [Wan 3.0 七天计划](wan3-7day-plan.md) |
 | 大场景、运镜 | **Seedance 2.0 / 2.5** 或 **Cinema Studio 4.0** | 运镜控制强。Seedance 有 @character、@style 参考和 Elements；2.5 需要 Pro 或 Plus 以上套餐 |
 | 视频局部修补 | **Seedance 2.5 Edit**、**Kling 3.0 Omni Edit**、**Cinema Studio 4.0 Edit Video** | 在画面上框出区域重画，例如只修一张跑偏的脸，不用整段重新生成 |
@@ -49,7 +49,7 @@
 
 ### 锁 1：角色设计——让 AI 有东西可抓
 
-AI 记不住"一张脸"，但能记住**几个明确的特征**。Higgsfield 的文档也建议用发色、服装细节、明显特征来做视觉锚点。所以设计阶段就给林迟放好 5 个锚点，每个都要做到在远景里也能认出来：
+AI 记不住"一张脸"，但能记住**几个明确的特征**。Higgsfield 的文档也建议用发色、服装细节、明显特征来做视觉锚点。所以设计阶段就给 Miles 放好 5 个锚点，每个都要做到在远景里也能认出来：
 
 | 锚点 | 设计 | 远景能不能认出来 |
 | --- | --- | --- |
@@ -101,7 +101,7 @@ AI 记不住"一张脸"，但能记住**几个明确的特征**。Higgsfield 的
 
 **用 Nano Banana Pro 制作**：
 
-第一步，出母版。用文生图，一次多出几张，挑一张定为 `linchi_master.png`：
+第一步，出母版。用文生图，一次多出几张，挑一张定为 `miles_master.png`：
 
 ```
 Character design, full body, front view, neutral standing pose, plain light grey background,
@@ -113,7 +113,7 @@ flat even lighting, no text.
 第二步，从母版生成其他图。选 Multi-reference 模式，参考图 1 放母版，每次只生成一张，不要一次生成多格设定图，那样每格分辨率太低：
 
 ```
-Image 1 is the character Lin Chi. Keep his face, hair, scar, ear studs, neck port, jacket,
+Image 1 is the character Miles. Keep his face, hair, scar, ear studs, neck port, jacket,
 prosthetic leg and colors exactly the same as image 1.
 Three-quarter view, full body, neutral standing pose, plain light grey background,
 flat even lighting, no text.
@@ -127,7 +127,7 @@ flat even lighting, no text.
 **角色描述块**（每次生成都原样复制，一个字都不改）：
 
 ```
-Lin Chi: a 19-year-old slim young man, narrow face, sharp chin, narrow upturned eyes with
+Miles: a 19-year-old slim young man, narrow face, sharp chin, narrow upturned eyes with
 pale teal-grey irises, a vertical scar cutting through his left eyebrow, short black hair
 with the right side shaved and a single cyan streak in his left fringe, three small silver
 studs in his right ear, a square metal data port on the left side of his neck with a tiny
@@ -148,11 +148,11 @@ character design.
 
 ### 锁 3：身份注册——Elements 为主，Soul ID 做对照测试
 
-**主方案：Elements。** 从设定包里挑最清楚的几张（正面全身、3/4 脸、侧脸、正面脸），在 Assets 里对图片选 **Create Element**，命名为 `LinChi`。之后在 Kling 3.0、Seedance、Cinema Studio 里输入 @ 选择林迟。
+**主方案：Elements。** 从设定包里挑最清楚的几张（正面全身、3/4 脸、侧脸、正面脸），在 Assets 里对图片选 **Create Element**，命名为 `Miles`。之后在 Kling 3.0、Seedance、Cinema Studio 里输入 @ 选择 Miles。
 
 **对照测试：Soul ID。** 官方文档说 Soul ID 是为真人照片设计的，虚构角色要"先生成肖像再训练"，但没有说二次元风格能不能保持。所以第一周做一次测试：
 
-1. 用设定包和 Nano Banana Pro 生成 20–30 张林迟的肖像和全身图（角度、表情多样，平光）
+1. 用设定包和 Nano Banana Pro 生成 20–30 张 Miles 的肖像和全身图（角度、表情多样，平光）
 2. 在 Soul 里选 **Train new character** 训练
 3. 在 Soul Cinema 里用 Soul ID 生成 8–12 张不同场景
 4. 判断：**画风是不是还是 2D 平涂？** 如果被拉向写实摄影风格，就放弃 Soul ID，只用 Elements
@@ -166,7 +166,7 @@ character design.
 **提示词模板**（Nano Banana Pro，Multi-reference）：
 
 ```
-Images 1-4 are reference sheets of the same character, Lin Chi. Keep his face, hair, scar,
+Images 1-4 are reference sheets of the same character, Miles. Keep his face, hair, scar,
 ear studs, neck port, jacket, prosthetic leg and colors exactly as in the references.
 [本镜头内容：景别、机位、动作、表情]
 [本段光线块]
@@ -194,15 +194,15 @@ ear studs, neck port, jacket, prosthetic leg and colors exactly as in the refere
 
 | 镜头类型 | 做法 |
 | --- | --- |
-| 人物特写、情绪镜头 | Kling 3.0：首帧 + 尾帧（两张都是锁 4 做出来的关键帧）+ @LinChi。动作幅度小，时长选最短，生成后再剪 |
-| 动作镜头 | **Kling 3.0 Motion Control**：你用手机拍自己做这个动作，再加上林迟的关键帧。要求：关键帧里手和手臂露出来，人物周围留出空间；你拍的视频不能有剪辑点，构图尽量和关键帧一致。导演亲自表演，表演和一致性一起解决 |
+| 人物特写、情绪镜头 | Kling 3.0：首帧 + 尾帧（两张都是锁 4 做出来的关键帧）+ @Miles。动作幅度小，时长选最短，生成后再剪 |
+| 动作镜头 | **Kling 3.0 Motion Control**：你用手机拍自己做这个动作，再加上 Miles 的关键帧。要求：关键帧里手和手臂露出来，人物周围留出空间；你拍的视频不能有剪辑点，构图尽量和关键帧一致。导演亲自表演，表演和一致性一起解决 |
 | 连续动作 | 上一个镜头的最后一帧，当作下一个镜头的首帧 |
 | 大场景、空镜 | Seedance 或 Cinema Studio 4.0，不涉及角色一致性 |
 
 视频提示词模板：
 
 ```
-@LinChi [动作，一次只写一个]. [运镜，用具体的词：push in / dolly in / handheld follow / crane up].
+@Miles [动作，一次只写一个]. [运镜，用具体的词：push in / dolly in / handheld follow / crane up].
 2D anime, flat cel shading, limited animation, the character stays exactly on model.
 ```
 
@@ -215,7 +215,7 @@ ear studs, neck port, jacket, prosthetic leg and colors exactly as in the refere
 **工具检查**：把同一段落的镜头放进一个文件夹，运行：
 
 ```bash
-python tools/check_consistency.py --ref refs/linchi/ --shots shots/seq1/ -o seq1_report.csv
+python tools/check_consistency.py --ref refs/miles/ --shots shots/seq1/ -o seq1_report.csv
 ```
 
 报告按"最不像参考图"排序，并标出明显偏离同批镜头的帧，作为"返工候选"。

@@ -15,7 +15,7 @@
         opencv-contrib-python-headless pandas scipy "emoji>=2.5.0,<2.12" pilmoji \
         "shapely!=2.0.7" pyclipper deprecation hfutils filelock piexif pyrfc6266 \
         urlobject tokenizers onnxruntime
-    python tools/check_consistency.py --ref refs/linchi/ --shots shots/ -o report.csv
+    python tools/check_consistency.py --ref refs/miles/ --shots shots/ -o report.csv
 
     --ref    角色参考图文件夹（角色设定包里的正面、侧面、表情等，平光、无文字）
     --shots  要检查的图片或视频文件夹；视频每个取 3 帧（开头、中间、结尾）
