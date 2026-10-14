@@ -20,12 +20,14 @@
 
 ## 1. 每一步用 Higgsfield 的哪个功能
 
+> **更新**：Miles 的造型已经改成第 2 版（雨披、小揪、倦眼、右耳耳机），以[人物档案](bible/characters.md)为准。
+>
 > **更新**：静态图（角色设定包、场景、道具、风格样张）改由 Codex 用 GPT Image 2.5 生成，见 [Codex 执行文档](codex-execution.md)。下表里 Nano Banana Pro 负责的步骤，都可以换成 Codex。**全片的静态图只用一个图像模型**，道理和视频一样：中途换模型会让偏差叠加。
 
 | 工序 | 功能 | 为什么用它 |
 | --- | --- | --- |
 | 角色设计、设定包、关键帧 | **Nano Banana Pro**（图像） | 最多 14 张参考图，能同时保持最多 5 个角色一致，最高 4K，文字也写得准 |
-| 关键帧小修 | **Nano Banana**（编辑） | 上传图片，用一句话改局部，例如"把耳钉改成银色" |
+| 关键帧小修 | **Nano Banana**（编辑） | 上传图片，用一句话改局部，例如"把耳机改成白色" |
 | 分镜预览 | **Popcorn**（Manual 模式） | 一次最多 8 帧连续画面，角色、光线保持一致，最多 4 张参考图。适合每段先出一版分镜，剪成动态分镜看节奏 |
 | 身份注册 | **Elements** | 保存成可复用的角色，在 Kling、Seedance、Cinema Studio 里用 @ 调用，跨镜头保持身份 |
 | 身份注册（待测试） | **Soul ID** | 用 20–80 张图训练身份。官方说虚构角色可以先生成肖像再训练，但 Soul 模型偏摄影风格，二次元能不能用要先测 |
@@ -55,11 +57,11 @@ AI 记不住"一张脸"，但能记住**几个明确的特征**。Higgsfield 的
 
 | 锚点 | 设计 | 远景能不能认出来 |
 | --- | --- | --- |
-| 发型 | 黑色短发，右侧剃短，左边刘海一缕青色挑染 | 能，青色挑染很显眼 |
-| 疤 | 一道竖疤切断左眉 | 近景 |
-| 耳钉 | 右耳三颗银色小耳钉 | 近景 |
-| 颈部接口 | 左颈一个方形金属数据接口，带一颗小红灯 | 中景 |
-| 义肢 | 左小腿是廉价的枪灰色义肢，外壳有裂痕，一排 5 颗指示灯，其中一颗坏了；左裤腿在膝盖处剪掉 | 能，**不对称的剪影**最好认 |
+| 发型 | 黑色及下巴的乱发，后颈扎一个短小揪，不剃发；左边刘海一缕青色挑染 | 能，青色挑染和小揪都很显眼 |
+| 眼睛 | 半睁的倦眼，带黑眼圈 | 近景 |
+| 耳机 | 右耳白色派单耳机，带短麦克风杆 | 中景 |
+| 雨披 | 深青色兜帽雨披，长到大腿，下摆青色反光带，背后一个大白色 Z | 能，雨披的轮廓和背后的 Z 最好认 |
+| 义肢 | 左小腿是廉价的枪灰色义肢，外壳有裂痕，一排 5 颗指示灯，其中一颗坏了；工作服左裤腿在膝盖处剪掉 | 能，**不对称的剪影**最好认 |
 
 **颜色固定**（全部取自原片实测色板）：
 
@@ -115,8 +117,7 @@ flat even lighting, no text.
 第二步，从母版生成其他图。选 Multi-reference 模式，参考图 1 放母版，每次只生成一张，不要一次生成多格设定图，那样每格分辨率太低：
 
 ```
-Image 1 is the character Miles. Keep his face, hair, scar, ear studs, neck port, jacket,
-prosthetic leg and colors exactly the same as image 1.
+Image 1 is the character Miles. Keep his face, tired eyes, hair, cyan streak, earpiece, rain poncho, prosthetic leg and colors exactly the same as image 1.
 Three-quarter view, full body, neutral standing pose, plain light grey background,
 flat even lighting, no text.
 [画风描述块]
@@ -129,14 +130,7 @@ flat even lighting, no text.
 **角色描述块**（每次生成都原样复制，一个字都不改）：
 
 ```
-Miles: a 19-year-old slim young man, narrow face, sharp chin, narrow upturned eyes with
-pale teal-grey irises, a vertical scar cutting through his left eyebrow, short black hair
-with the right side shaved and a single cyan streak in his left fringe, three small silver
-studs in his right ear, a square metal data port on the left side of his neck with a tiny
-red light, oversized deep-teal courier jacket with bright cyan reflective stripes and a high
-collar, black cargo pants with the left leg cut off at the knee, left lower leg is a cheap
-scratched gunmetal prosthetic with a cracked casing and a row of five small lights,
-a thin transparent cyan AR visor across his eyes.
+Miles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.
 ```
 
 **画风描述块**（不写任何作品名和工作室名，只描述特征，依据是原片参考分析）：
@@ -165,8 +159,7 @@ a thin transparent cyan AR visor across his eyes.
 **提示词模板**（Nano Banana Pro，Multi-reference）：
 
 ```
-Images 1-4 are reference sheets of the same character, Miles. Keep his face, hair, scar,
-ear studs, neck port, jacket, prosthetic leg and colors exactly as in the references.
+Images 1-4 are reference sheets of the same character, Miles. Keep his face, tired eyes, hair, cyan streak, earpiece, rain poncho, prosthetic leg and colors exactly as in the references.
 [本镜头内容：景别、机位、动作、表情]
 [本段光线块]
 [画风描述块]
@@ -219,7 +212,7 @@ python tools/check_consistency.py --ref refs/miles/ --shots shots/seq1/ -o seq1_
 
 报告按"最不像参考图"排序，并标出明显偏离同批镜头的帧，作为"返工候选"。
 
-**人眼检查**：逐个镜头对照 5 个锚点——挑染在左边、疤在左眉、耳钉在右耳、接口在左颈、义肢在左腿。**左右反了是最常见的错误**，工具查不出来，只能靠人眼。
+**人眼检查**：逐个镜头对照 5 个锚点——挑染在左边刘海、耳机在右耳、义肢在左腿、雨披背后有 Z、眼睛是半睁的倦眼。**左右反了是最常见的错误**，工具查不出来，只能靠人眼。
 
 **返工路线**：
 

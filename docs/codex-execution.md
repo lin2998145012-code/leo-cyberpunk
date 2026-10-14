@@ -37,6 +37,7 @@
 - 这些图**只用来学画法**：线条、脸和眼睛的画法、身体比例、阴影、配色。**不能复制图里的任何角色、脸、发型、服装、标志、水印、字幕或文字。**
 - 这些图里有平台水印和字幕，提示词里已经要求模型忽略。**不要修改、裁剪这些图，也不要去掉水印。**
 - `refs/style/` 里的图已经在仓库中。**不要修改、删除或新增这些图**，也不要复制到 `assets/` 下面。
+- **风格参考图里的人物要和我们的角色尽量不像**（性别、发型、服装都不同），这样模型只能学到画法，学不到长相。所以给 Miles 用的参考图里，**不放原作男主角的截图**。
 - 阶段 0 结束后，导演选定的 Miles 定妆照就成了**我们自己的风格基准**。之后的任务优先用我们自己的图当风格参考，原作截图每次最多用 2 张。
 
 ### 1.2 生图工具
@@ -81,10 +82,18 @@
 你能看图。每张图生成后先自己检查：
 1. 有没有文字
 2. **画风**：和风格参考图比，线条是不是一样细、一样干净？眼睛是不是窄而上挑、上睫毛线很粗？是不是只有一层硬边阴影、阴影带靛蓝或紫色？有没有出现原作里没有的柔和渐变、光泽感或 3D 感？
-3. **有没有抄原作的角色**：脸、发型、服装是不是太像风格参考图里的某个角色？比如黄色夹克、原作角色的发型。像的话重新生成。
+3. **有没有抄原作的角色**：脸、发型、服装是不是太像风格参考图里的某个角色？对照第 2.7 节的"和原作主角的区别"逐条检查，像的话重新生成。
 4. 角色图：5 个锚点对不对，**左右有没有反**（见第 2.7 节）
 
 不合格就重新生成，**每个任务最多重试 3 次**。3 次都不合格，保留最好的一张，在 REVIEW.md 里标出来。
+
+### 1.7 执行说明（阶段 0 第 1 版之后补充）
+
+- **左右**：正面图里，角色的左边在画面右侧。`{KEEP_MILES}` 已经写明，生成前后都按这个检查。
+- **目镜**：任务里写了"目镜推到头上"的，以任务为准，覆盖 `{MILES}` 里"目镜横在眼前"的默认描述。
+- **尺寸**：如果工具不让你设置尺寸，就在提示词最后加一句 `Output a square image.`（或者 `portrait` / `landscape`，按任务要求的比例），并在 manifest 里记录实际尺寸。**不要为了凑尺寸去裁剪、缩放或镜像。**
+- **模型和质量**：工具不显示模型和质量时，manifest 里如实写 `not-exposed`。
+- **提示词记录**：每次生成实际用的完整提示词，存进 `assets/_review/<阶段>_prompts.json`（你在第 1 版里已经这样做了，很好）。
 
 ---
 
@@ -114,12 +123,17 @@ Plain light grey background, flat even lighting, no text, no labels, no numbers,
 
 ### {MILES}
 ```
-Miles: a 19-year-old slim young man, narrow face, sharp chin, narrow upturned eyes with pale teal-grey irises, a vertical scar cutting through his left eyebrow, short black hair with the right side shaved and a single cyan streak in his left fringe, three small silver studs in his right ear, a square metal data port on the left side of his neck with a tiny red light, oversized deep-teal courier jacket with bright cyan reflective stripes and a high collar, black cargo pants with the left leg cut off at the knee, left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights, a thin transparent cyan AR visor across his eyes.
+Miles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.
 ```
 
 ### {KEEP_MILES}
 ```
-The character is Miles from our character references. Keep his face, hair, cyan streak, eyebrow scar, ear studs, neck port, jacket, prosthetic leg and colors exactly the same. Do not mirror him: the cyan streak and the scar are on his left side, the ear studs on his right ear, the prosthetic on his left leg.
+The character is Miles from our character references. Keep his face, tired eyes, hair and ponytail, cyan streak, earpiece, rain poncho, jumpsuit, delivery bag, prosthetic leg and colors exactly the same. Do not mirror him: the cyan streak is in his left bangs, the earpiece on his right ear, the prosthetic on his left leg. In a front view, his left side appears on the right side of the image.
+```
+
+### {ORIGINAL}
+```
+This is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.
 ```
 
 ### {MIA}
@@ -131,26 +145,31 @@ Mia: a 7-year-old girl, round face, big eyes with pale teal-grey irises, short b
 
 | 锚点 | 正确 | 常见错误 |
 | --- | --- | --- |
-| 青色挑染 | **左边**刘海 | 画到右边、整头染色 |
-| 疤 | 竖疤切断**左眉** | 画到右眉、横疤、没有疤 |
-| 耳钉 | **右耳**三颗银色 | 画到左耳、数量不对、金色 |
-| 颈部接口 | **左颈**方形金属，一颗小红灯 | 画到右边、圆形 |
-| 义肢 | **左小腿**枪灰色，5 颗灯，**左**裤腿在膝盖处剪掉 | 画到右腿、两条腿都正常 |
+| 发型 | 及下巴的黑色乱发，后颈短小揪，**左边**刘海一缕青色挑染，**不剃发** | 剃了两侧、画了剃发图案、挑染在右边、头发太短 |
+| 眼睛 | 半睁的倦眼，有黑眼圈 | 眼睛睁得很大很有神、没有黑眼圈 |
+| 耳机 | **右耳**白色派单耳机，短麦克风杆 | 画到左耳、画成耳钉 |
+| 雨披 | 深青色兜帽雨披，长到大腿，下摆青色反光带，**背后**白色大 Z | 画成夹克、画了大翻领、长度太短、Z 在胸前 |
+| 义肢 | **左小腿**枪灰色，5 颗灯，工作服**左**裤腿在膝盖处剪掉 | 画到右腿、两条腿都正常 |
 
 角色面向镜头时，他的左边在画面的**右侧**。以角色自己的左右为准。另外，Miles 身上不能出现暖金色。
+
+**和原作主角的区别**：Miles 是原创角色，只有画风和原作一样。生成的图里只要出现剃发、大翻领夹克、黄色衣服、金链子、背心中的任何一样，都算不合格。
 
 ---
 
 ## 3. 阶段 0：画风测试和 Miles 定妆
 
+> **第 2 版。** 第 1 版的角色造型太像原作主角，已经作废（导演 2026-10-14 决定）。开始前，把第 1 版的所有文件移到 `assets/_review/stage0_v1/` 下保存，再从 c01 开始重新生成。manifest 里第 1 版的行保留，在 `notes` 里标上 `v1 作废`。
+
 ### T0.1 定妆照候选（8 张）
 
 - 尺寸：`1024x1024`
-- 风格参考：`refs/style/char_david_smile.jpg`、`char_lucy_closeup.jpg`、`char_gloria_profile.jpg`、`char_david_teal.jpg`
+- 风格参考：`refs/style/char_lucy_closeup.jpg`、`char_gloria_profile.jpg`、`char_dorio_action.jpg`、`light_teal_pink.jpg`
 - 输出：`assets/characters/miles/portrait/miles_portrait_c01.png` … `c08.png`
 - 提示词：
 ```
 {USE_STYLE_REFS}
+{ORIGINAL}
 Character portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. {SHEET}
 {MILES}
 {STYLE}
@@ -159,12 +178,13 @@ Character portrait for a model sheet: head and shoulders of a new original chara
 ### T0.2 全身候选（6 张）
 
 - 尺寸：`1024x1536`
-- 风格参考：`refs/style/char_fullbody_station.jpg`、`char_group_fullbody.jpg`、`char_dorio_action.jpg`
+- 风格参考：`refs/style/char_lucy_day.jpg`、`char_dorio_action.jpg`、`bg_station.jpg`
 - 输出：`assets/characters/miles/fullbody/miles_full_c01.png` … `c06.png`
 - 提示词：
 ```
 {USE_STYLE_REFS}
-Full-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg. {SHEET}
+{ORIGINAL}
+Full-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. {SHEET}
 {MILES}
 {STYLE}
 ```
@@ -187,16 +207,17 @@ Full-body character design of a new original character, front view, neutral stan
 ### T1.1 人物设定总图（3 张候选）
 
 - 尺寸：`2560x1440`
-- 参考图：`miles_portrait_master.png`、`miles_full_master.png`、`refs/style/char_fullbody_station.jpg`、`refs/style/char_group_fullbody.jpg`
+- 参考图：`miles_portrait_master.png`、`miles_full_master.png`、`refs/style/char_lucy_day.jpg`、`refs/style/char_dorio_action.jpg`
 - 输出：`assets/characters/miles/sheet/miles_sheet_c01..c03.png`
 - 提示词：
 ```
 {KEEP_MILES}
 {USE_STYLE_REFS}
+{ORIGINAL}
 A professional character model sheet of Miles in one image. Layout:
-Left two thirds: four full-body views standing side by side at exactly the same height and proportions: front view, three-quarter view of his left side, exact side profile of his left side, back view. Neutral standing pose, arms slightly away from the body, the delivery box on his back only in the back view.
+Left two thirds: four full-body views standing side by side at exactly the same height and proportions: front view, three-quarter view of his left side, exact side profile of his left side, back view. Neutral standing pose, arms slightly away from the body; the back view shows the large white Z on the back of the poncho and the short ponytail.
 Right third, top: six head studies of the same face: front, three-quarter left, profile left, three-quarter right, looking up, looking down.
-Right third, bottom: close-ups of the prosthetic left lower leg, the neck data port, his right ear with three silver studs, his left eyebrow scar, the AR visor.
+Right third, bottom: close-ups of the prosthetic left lower leg, the white earpiece on his right ear, his tired eyes with dark under-eye circles, the hem of the poncho with the cyan reflective band, the AR visor.
 Along the bottom edge: a row of plain color swatches of his colors.
 {SHEET}
 {MILES}
@@ -229,7 +250,7 @@ Along the bottom edge: a row of plain color swatches of his colors.
 ### T1.3 表情九宫格（2 张候选）
 
 - 尺寸：`2048x2048`
-- 参考图：`miles_portrait_master.png`、`miles_sheet_master.png`、`refs/style/char_david_smile.jpg`、`refs/style/char_lucy_closeup.jpg`
+- 参考图：`miles_portrait_master.png`、`miles_sheet_master.png`、`refs/style/char_lucy_closeup.jpg`、`refs/style/char_gloria_profile.jpg`
 - 输出：`assets/characters/miles/expressions/miles_expr_grid_c01..c02.png`
 - 提示词：
 ```
@@ -319,7 +340,7 @@ A phone photo of Mia at home, smiling at the camera with both hands raised, show
 | --- | --- |
 | `robot` | `Design sheet of a small delivery service robot: white egg-shaped body on wheels, about 80 cm tall, a round screen face showing a simple smiling face, two thin mechanical arms, a cyan Z-shaped logo on its body. Front, side and back views.` |
 | `drone` | `Design sheet of a black police drone: four rotors, a single red mechanical eye with an iris that can contract, red and blue police lights on both sides. Front, side, top views and a close-up of the eye.` |
-| `mascot` | `Mascot design of a cheerful cartoon delivery rider: big head, smiling closed eyes, giving a thumbs up, wearing a brand-new deep-teal courier jacket with bright cyan reflective stripes, both legs normal and healthy. Front view and a three-quarter view. Simpler and rounder than the main characters, like an advertising mascot.` |
+| `mascot` | `Mascot design of a cheerful cartoon delivery rider: big head, smiling closed eyes, giving a thumbs up, wearing a brand-new deep-teal hooded rain poncho with a cyan reflective band and a white Z logo, both legs normal and healthy. Front view and a three-quarter view. Simpler and rounder than the main characters, like an advertising mascot.` |
 
 ### 阶段 2 结束
 
@@ -382,7 +403,7 @@ Prop design sheet of {道具描述}, multiple orthographic views (front, side, b
 | 文件夹 | {道具描述} |
 | --- | --- |
 | `scooter` | `an old courier electric scooter, deep teal body, a phone mount on the handlebar, a dented mudguard` |
-| `deliverybox` | `a square backpack-style courier delivery box, deep teal with a cyan Z-shaped logo, worn corners and scratches, shoulder straps` |
+| `deliverybag` | `a teal waterproof courier delivery bag worn slung across the chest, a cyan Z-shaped logo, a roll-top closure, worn edges and scratches` |
 | `phone` | `a cheap smartphone with a crack across the top right corner of a blank black screen` |
 | `cupcake` | `a squashed cupcake with white frosting and one small strawberry, inside a clear plastic box` |
 | `lighter` | `a cheap transparent plastic lighter with visible fuel inside and a flint wheel` |
@@ -425,7 +446,7 @@ Prop design sheet of {道具描述}, multiple orthographic views (front, side, b
 
 ```
 task,file,model,size,quality,refs,attempt,self_check,notes
-T0.1,assets/characters/miles/portrait/miles_portrait_c01.png,gpt-image-2.5-sunburst,1024x1024,high,char_david_smile;char_lucy_closeup;char_gloria_profile;char_david_teal,1,pass,
+T0.1,assets/characters/miles/portrait/miles_portrait_c01.png,gpt-image-2.5-sunburst,1024x1024,high,char_lucy_closeup;char_gloria_profile;char_dorio_action;light_teal_pink,1,pass,
 ```
 
 `self_check` 填 `pass`、`fail` 或 `unsure`；`notes` 写不合格的原因或需要导演注意的地方。
