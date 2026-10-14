@@ -1,7 +1,9 @@
 # Wan 3.0 免费 7 天作战计划
 
 > 账号：Higgsfield Plus。Wan 3.0 在网页上 7 天不限量。
-> 相关文档：[导演方案](film-overclock.md)　[前期制作](preproduction.md)　[Higgsfield 制作流程](higgsfield-workflow.md)
+> 相关文档：[导演方案](film-overclock.md)　[前期制作](preproduction.md)　[Higgsfield 制作流程](higgsfield-workflow.md)　[Codex 执行文档](codex-execution.md)
+>
+> **更新**：静态图（设定包、场景、道具、关键帧）改由 Codex 用 GPT Image 2.5 生成。下文写着 Nano Banana Pro 的步骤，都换成 Codex 来做。
 
 ---
 

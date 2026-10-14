@@ -5,6 +5,7 @@
 - [实现方案](docs/production-plan.md)：风格拆解、工具选型、制作流程、后期、预算和路线图
 - [原片参考分析](docs/reference-analysis.md)：基于官方预告实测的色彩、作画帧率、剪辑节奏和特效清单
 - [前期制作](docs/preproduction.md)：优质 AIGC 作品的制作流程，本片的素材清单和制作顺序
+- [Codex 执行文档](docs/codex-execution.md)：交给 Codex 用 GPT Image 2.5 生成前期视觉素材的分步任务
 - [人物档案](docs/bible/characters.md)、[世界观、场景和道具](docs/bible/world.md)
 - [《超频 OVERCLOCK》导演方案](docs/film-overclock.md)：第一版故事、导演规则、色彩剧本和 51 个镜头的分镜表
 - [Higgsfield 制作流程](docs/higgsfield-workflow.md)：每一步用 Higgsfield 的哪个功能，人物一致性的六道锁，第一周测试计划
