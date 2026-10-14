@@ -4,5 +4,6 @@
 
 - [实现方案](docs/production-plan.md)：风格拆解、工具选型、制作流程、后期、预算和路线图
 - [原片参考分析](docs/reference-analysis.md)：基于官方预告实测的色彩、作画帧率、剪辑节奏和特效清单
+- [《超频 OVERCLOCK》导演方案](docs/film-overclock.md)：第一版故事、导演规则、色彩剧本和 51 个镜头的分镜表
 - [镜头表模板](templates/shot-list.csv)
 - [视频分析工具](tools/analyze_video.py)：分析参考片或自己生成的镜头（镜头切分、色板、换画间隔）
