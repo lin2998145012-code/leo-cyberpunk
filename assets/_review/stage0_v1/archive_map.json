@@ -1,0 +1,12 @@
+{
+  "assets/REVIEW.md": "assets/_review/stage0_v1/REVIEW.md",
+  "assets/_review/build_stage0_review.py": "assets/_review/stage0_v1/_review/build_stage0_review.py",
+  "assets/_review/record_stage0.py": "assets/_review/stage0_v1/_review/record_stage0.py",
+  "assets/_review/stage0_attempts/miles_portrait_c01_a1.png": "assets/_review/stage0_v1/_review/stage0_attempts/miles_portrait_c01_a1.png",
+  "assets/_review/stage0_attempts/miles_portrait_c01_a2.png": "assets/_review/stage0_v1/_review/stage0_attempts/miles_portrait_c01_a2.png",
+  "assets/_review/stage0_attempts/miles_portrait_c01_a3.png": "assets/_review/stage0_v1/_review/stage0_attempts/miles_portrait_c01_a3.png",
+  "assets/_review/stage0_portraits.jpg": "assets/_review/stage0_v1/_review/stage0_portraits.jpg",
+  "assets/_review/stage0_prompts.json": "assets/_review/stage0_v1/_review/stage0_prompts.json",
+  "assets/_review/stage0_style_compare.jpg": "assets/_review/stage0_v1/_review/stage0_style_compare.jpg",
+  "assets/characters/miles/portrait/miles_portrait_c01.png": "assets/_review/stage0_v1/characters/miles/portrait/miles_portrait_c01.png"
+}
