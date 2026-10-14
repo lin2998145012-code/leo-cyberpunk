@@ -1,0 +1,32 @@
+{
+  "portrait": {
+    "task": "T0.5.1",
+    "refs": [
+      "assets/characters/miles/portrait/miles_portrait_c04.png",
+      "refs/style/char_gloria_profile.jpg"
+    ],
+    "prompt": "Edit the input image. Keep the character, face shape, eyes, hair, ponytail, expression, pose, earpiece, outfit and drawing style exactly the same. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D. Keep exactly one hard-edged shadow tone, with the shadows tinted violet-indigo. Remove the overall purple cast from the face and neck.\n2. Remove the strong cyan rim light along the face, hair and jacket. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient, no vignette.\n4. Make the AR visor thinner: a slim transparent cyan band pushed up onto his hair.\nNo text.\nRemove the cyan dyed hair streak. Keep all hair black, matching the second reference image where provided.\nOutput a square image.",
+    "source_commit": "fc458f8",
+    "model": "not-exposed",
+    "quality": "not-exposed",
+    "original_prompt": "Edit the input image. Keep the character, face shape, eyes, hair, ponytail, expression, pose, earpiece, outfit and drawing style exactly the same. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D. Keep exactly one hard-edged shadow tone, with the shadows tinted violet-indigo. Remove the overall purple cast from the face and neck.\n2. Remove the strong cyan rim light along the face, hair and jacket. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient, no vignette.\n4. Make the AR visor thinner: a slim transparent cyan band pushed up onto his hair.\nNo text.\nOutput a square image.",
+    "director_clarification": "Preserve the original cyan dyed hair streak. It is hair color, not rim lighting.",
+    "superseded_prompt_with_streak": "Edit the input image. Keep the character, face shape, eyes, hair, ponytail, expression, pose, earpiece, outfit and drawing style exactly the same. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D. Keep exactly one hard-edged shadow tone, with the shadows tinted violet-indigo. Remove the overall purple cast from the face and neck.\n2. Remove the strong cyan rim light along the face, hair and jacket. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient, no vignette.\n4. Make the AR visor thinner: a slim transparent cyan band pushed up onto his hair.\nNo text.\nPreserve the original cyan dyed hair streak. It is hair color, not rim lighting.\nOutput a square image.",
+    "director_override": "Remove the cyan dyed hair streak. Keep all hair black, matching the second reference image where provided."
+  },
+  "fullbody": {
+    "task": "T0.5.2",
+    "refs": [
+      "assets/characters/miles/fullbody/miles_full_c05.png",
+      "assets/characters/miles/master_fix/portrait_fix_v2.png"
+    ],
+    "prompt": "Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.\n2. Remove the strong cyan rim light. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.\n4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.\n5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.\n6. Make the AR visor thinner.\nNo text.\nRemove the cyan dyed hair streak. Keep all hair black, matching the second reference image where provided.\nOutput a portrait image.",
+    "source_commit": "fc458f8",
+    "model": "not-exposed",
+    "quality": "not-exposed",
+    "original_prompt": "Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.\n2. Remove the strong cyan rim light. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.\n4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.\n5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.\n6. Make the AR visor thinner.\nNo text.\nOutput a portrait image.",
+    "director_clarification": "Preserve the original cyan dyed hair streak. It is hair color, not rim lighting.",
+    "superseded_prompt_with_streak": "Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.\n2. Remove the strong cyan rim light. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.\n4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.\n5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.\n6. Make the AR visor thinner.\nNo text.\nPreserve the original cyan dyed hair streak. It is hair color, not rim lighting.\nOutput a portrait image.",
+    "director_override": "Remove the cyan dyed hair streak. Keep all hair black, matching the second reference image where provided."
+  }
+}

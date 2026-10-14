@@ -1,0 +1,20 @@
+{
+  "source_commit": "fc458f8",
+  "portrait_source": "c04",
+  "fullbody_source": "c05",
+  "status": "candidate_set_complete_with_failed_checks_awaiting_director",
+  "portrait_reference_provisional": "portrait_fix_v2.png",
+  "portrait_reference_approved": false,
+  "clarification_requested": "Keep the original cyan dyed hair streak. It is hair color, not rim lighting.",
+  "reason": "Three consecutive portrait edits removed the cyan hair streak.",
+  "director_reply": "允许补充，保留挑染后继续",
+  "clarification_approved": true,
+  "latest_director_reply": "你这也不是挑染啊，算了，别做挑染了",
+  "cyan_hair_streak": false,
+  "portrait_versions_reused_from_original_attempts": {
+    "v1": "portrait_fix_v1_a1.png",
+    "v2": "portrait_fix_v1_a2.png",
+    "v3": "portrait_fix_v1_a3.png"
+  },
+  "final_master_selected": false
+}

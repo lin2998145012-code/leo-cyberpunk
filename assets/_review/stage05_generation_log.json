@@ -1,0 +1,178 @@
+[
+  {
+    "kind": "portrait",
+    "version": 1,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-2afae4a2-9bb6-4272-b351-b1c6f068b5ae.png",
+    "file": "assets/_review/stage05_attempts/portrait_fix_v1_a1.png",
+    "size": "1254x1254",
+    "self_check": "fail",
+    "notes": "暖肤色与较薄目镜已改，轮廓神态基本保持；但青色刘海挑染被一并去掉，背景仍疑有渐变，违反保留发型配色要求，重试。",
+    "prompt": "Edit the input image. Keep the character, face shape, eyes, hair, ponytail, expression, pose, earpiece, outfit and drawing style exactly the same. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D. Keep exactly one hard-edged shadow tone, with the shadows tinted violet-indigo. Remove the overall purple cast from the face and neck.\n2. Remove the strong cyan rim light along the face, hair and jacket. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient, no vignette.\n4. Make the AR visor thinner: a slim transparent cyan band pushed up onto his hair.\nNo text.\nOutput a square image.",
+    "refs": [
+      "assets/characters/miles/portrait/miles_portrait_c04.png",
+      "refs/style/char_gloria_profile.jpg"
+    ],
+    "sha256": "5ebc67d05e77fcc82a5472e69406162fe487933d056a9350e5cc7504a09d04a1"
+  },
+  {
+    "kind": "portrait",
+    "version": 1,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-8844e2d7-0975-4508-a4b1-f2c7b3380d51.png",
+    "file": "assets/_review/stage05_attempts/portrait_fix_v1_a2.png",
+    "size": "1254x1254",
+    "self_check": "fail",
+    "notes": "脸型眼神与衣服基本保持，暖肤色和薄目镜已改；但再次丢失青色挑染，背景仍非严格纯平；重试。",
+    "prompt": "Edit the input image. Keep the character, face shape, eyes, hair, ponytail, expression, pose, earpiece, outfit and drawing style exactly the same. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D. Keep exactly one hard-edged shadow tone, with the shadows tinted violet-indigo. Remove the overall purple cast from the face and neck.\n2. Remove the strong cyan rim light along the face, hair and jacket. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient, no vignette.\n4. Make the AR visor thinner: a slim transparent cyan band pushed up onto his hair.\nNo text.\nOutput a square image.",
+    "refs": [
+      "assets/characters/miles/portrait/miles_portrait_c04.png",
+      "refs/style/char_gloria_profile.jpg"
+    ],
+    "sha256": "8f65cb37370aeb4f778ba269ea57434dba46be758ecabb7aa4d9cdf278504038"
+  },
+  {
+    "kind": "portrait",
+    "version": 1,
+    "attempt": 3,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-b194516f-56e6-4a2b-92f2-26d22b71983a.png",
+    "file": "assets/_review/stage05_attempts/portrait_fix_v1_a3.png",
+    "size": "1254x1254",
+    "self_check": "fail",
+    "notes": "连续第三次丢失青色挑染；暖肤色、目镜变薄、面部强青边去除，脸型神态基本保持，头顶发尖略变，背景有轻微变化；按1.4询问导演是否允许追加保留挑染的澄清。",
+    "prompt": "Edit the input image. Keep the character, face shape, eyes, hair, ponytail, expression, pose, earpiece, outfit and drawing style exactly the same. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D. Keep exactly one hard-edged shadow tone, with the shadows tinted violet-indigo. Remove the overall purple cast from the face and neck.\n2. Remove the strong cyan rim light along the face, hair and jacket. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient, no vignette.\n4. Make the AR visor thinner: a slim transparent cyan band pushed up onto his hair.\nNo text.\nOutput a square image.",
+    "refs": [
+      "assets/characters/miles/portrait/miles_portrait_c04.png",
+      "refs/style/char_gloria_profile.jpg"
+    ],
+    "sha256": "bb575b298fd2488d0888221311ea92cb82d9a8ae6e5d1d2c681cf4b5b50ed0f5"
+  },
+  {
+    "kind": "portrait",
+    "version": 1,
+    "attempt": 4,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-364c0b9c-6009-44be-865a-81dad93c9b30.png",
+    "file": "assets/_review/stage05_attempts/portrait_fix_v1_a4.png",
+    "size": "1254x1254",
+    "self_check": "unsure",
+    "notes": "导演批准澄清后首版：青色挑染保留，脸型倦眼表情和衣服轮廓基本一致；肤色已转暖，强青边去除，目镜变薄；背景疑有轻微明暗变化，肤色仍有柔和过渡，待量化复核。",
+    "prompt": "Edit the input image. Keep the character, face shape, eyes, hair, ponytail, expression, pose, earpiece, outfit and drawing style exactly the same. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D. Keep exactly one hard-edged shadow tone, with the shadows tinted violet-indigo. Remove the overall purple cast from the face and neck.\n2. Remove the strong cyan rim light along the face, hair and jacket. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient, no vignette.\n4. Make the AR visor thinner: a slim transparent cyan band pushed up onto his hair.\nNo text.\nPreserve the original cyan dyed hair streak. It is hair color, not rim lighting.\nOutput a square image.",
+    "refs": [
+      "assets/characters/miles/portrait/miles_portrait_c04.png",
+      "refs/style/char_gloria_profile.jpg"
+    ],
+    "sha256": "847ab22869f9998e7b478073fe8d0ce07d83b8c89684eb2686ef694324cdbaf4"
+  },
+  {
+    "kind": "portrait",
+    "version": 2,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-40bb2f4f-002e-4ae0-93d1-b5ffeeca4f6f.png",
+    "file": "assets/_review/stage05_attempts/portrait_fix_v2_a1.png",
+    "size": "1254x1254",
+    "self_check": "fail",
+    "notes": "生成开始时按此前保留挑染的批准提示词执行；输出返回前导演取消挑染，本张带挑染已被新决定淘汰，仅存档。",
+    "prompt": "Edit the input image. Keep the character, face shape, eyes, hair, ponytail, expression, pose, earpiece, outfit and drawing style exactly the same. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D. Keep exactly one hard-edged shadow tone, with the shadows tinted violet-indigo. Remove the overall purple cast from the face and neck.\n2. Remove the strong cyan rim light along the face, hair and jacket. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient, no vignette.\n4. Make the AR visor thinner: a slim transparent cyan band pushed up onto his hair.\nNo text.\nPreserve the original cyan dyed hair streak. It is hair color, not rim lighting.\nOutput a square image.",
+    "refs": [
+      "assets/characters/miles/portrait/miles_portrait_c04.png",
+      "refs/style/char_gloria_profile.jpg"
+    ],
+    "sha256": "31821afb216b3af5d97de37947a646d76d8509247b26e39deac35d02edfabfc9"
+  },
+  {
+    "kind": "fullbody",
+    "version": 1,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-ea97c963-9fce-4d60-9833-1b4741fefce1.png",
+    "file": "assets/_review/stage05_attempts/full_fix_v1_a1.png",
+    "size": "1024x1536",
+    "self_check": "unsure",
+    "notes": "五灯位正确且第三颗暗、其余白；裂纹和裤腿毛边保留，黑发暖肤色、强青边已去，姿态包和衣服大体保持。额外出现头顶目镜带且眼前镜片不清，脸与定妆轮廓仍有差异；阴影偏棕，灰底疑有渐变，待检查。",
+    "prompt": "Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.\n2. Remove the strong cyan rim light. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.\n4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.\n5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.\n6. Make the AR visor thinner.\nNo text.\nRemove the cyan dyed hair streak. Keep all hair black, matching the second reference image where provided.\nOutput a portrait image.",
+    "refs": [
+      "assets/characters/miles/fullbody/miles_full_c05.png",
+      "assets/characters/miles/master_fix/portrait_fix_v2.png"
+    ],
+    "sha256": "7863e80d205f5767e68e6d0817d60e84c4e5feba9996bd1b5b924d88dfa3843c"
+  },
+  {
+    "kind": "fullbody",
+    "version": 2,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-1443a636-50d6-4314-a347-ee3e22ca0249.png",
+    "file": "assets/_review/stage05_attempts/full_fix_v2_a1.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "暖肤色黑发、裤边毛边、薄目镜位置正确，姿态衣服包基本保持；但只有4个灯位（3白1暗），未达5灯；背景仍渐变，重试。",
+    "prompt": "Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.\n2. Remove the strong cyan rim light. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.\n4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.\n5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.\n6. Make the AR visor thinner.\nNo text.\nRemove the cyan dyed hair streak. Keep all hair black, matching the second reference image where provided.\nOutput a portrait image.",
+    "refs": [
+      "assets/characters/miles/fullbody/miles_full_c05.png",
+      "assets/characters/miles/master_fix/portrait_fix_v2.png"
+    ],
+    "sha256": "e932d5f91a23369a0e820ecadd90b46ad1b1673afc9c7bd5cc98b14f25901805"
+  },
+  {
+    "kind": "fullbody",
+    "version": 2,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-1a5ee99c-f674-49c4-92b6-16ed902e9519.png",
+    "file": "assets/_review/stage05_attempts/full_fix_v2_a2.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "5个灯位但第二颗暗，第三颗仍亮，熄灭位置不对；黑发暖肤色、薄目镜、毛边裤腿正确；姿态衣服基本保持，背景仍有渐变。",
+    "prompt": "Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.\n2. Remove the strong cyan rim light. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.\n4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.\n5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.\n6. Make the AR visor thinner.\nNo text.\nRemove the cyan dyed hair streak. Keep all hair black, matching the second reference image where provided.\nOutput a portrait image.",
+    "refs": [
+      "assets/characters/miles/fullbody/miles_full_c05.png",
+      "assets/characters/miles/master_fix/portrait_fix_v2.png"
+    ],
+    "sha256": "88db2ec7520f4bee1b2ca3f7f447b750b5547d1b3595345f9f8ab08257fe7a1e"
+  },
+  {
+    "kind": "fullbody",
+    "version": 2,
+    "attempt": 3,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-9f372ab3-9d85-44f7-862b-674f271656d9.png",
+    "file": "assets/_review/stage05_attempts/full_fix_v2_a3.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "5灯位且第三颗暗已正确，毛边裤腿、黑发暖肤色正确；但目镜从眼前移到头上，超出只变薄要求；灰底仍有渐变、阴影偏棕。三次后保留本版供审查，不视为通过。",
+    "prompt": "Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.\n2. Remove the strong cyan rim light. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.\n4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.\n5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.\n6. Make the AR visor thinner.\nNo text.\nRemove the cyan dyed hair streak. Keep all hair black, matching the second reference image where provided.\nOutput a portrait image.",
+    "refs": [
+      "assets/characters/miles/fullbody/miles_full_c05.png",
+      "assets/characters/miles/master_fix/portrait_fix_v2.png"
+    ],
+    "sha256": "d4b46b8743e45a38fa012ae9c6ef3c203c17ca60058534a25d6eced5d7f39db6"
+  },
+  {
+    "kind": "fullbody",
+    "version": 3,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-7ab79a9a-3875-42bc-9f58-27411f9eed8d.png",
+    "file": "assets/_review/stage05_attempts/full_fix_v3_a1.png",
+    "size": "1024x1536",
+    "self_check": "unsure",
+    "notes": "五灯位、第三暗其余白、裁断毛边、眼前薄目镜均正确；黑发暖肤色，姿态衣服包和裂纹大体保持。脸保持疲惫感，但与定妆脸型仍不完全一致；皮肤阴影偏棕，背景仍疑有渐变，待量化。",
+    "prompt": "Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.\n2. Remove the strong cyan rim light. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.\n4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.\n5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.\n6. Make the AR visor thinner.\nNo text.\nRemove the cyan dyed hair streak. Keep all hair black, matching the second reference image where provided.\nOutput a portrait image.",
+    "refs": [
+      "assets/characters/miles/fullbody/miles_full_c05.png",
+      "assets/characters/miles/master_fix/portrait_fix_v2.png"
+    ],
+    "sha256": "66dad10987159c88b0921baf5ac6827929215b23a353dc8d59ee1e4c3fed4334"
+  },
+  {
+    "kind": "fullbody",
+    "version": 1,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-2eb50a91-1b5b-4071-ba01-3820cb8b31ac.png",
+    "file": "assets/_review/stage05_attempts/full_fix_v1_a2.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "五灯第三暗与裤腿毛边正确，但新增第二根麦杆，目镜仍移到头上；背景渐变未消除。未选用，v1保留a1。全身任务已完成3个初版和3次额外重试。",
+    "prompt": "Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:\n1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.\n2. Remove the strong cyan rim light. A very thin rim line is acceptable.\n3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.\n4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.\n5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.\n6. Make the AR visor thinner.\nNo text.\nRemove the cyan dyed hair streak. Keep all hair black, matching the second reference image where provided.\nOutput a portrait image.",
+    "refs": [
+      "assets/characters/miles/fullbody/miles_full_c05.png",
+      "assets/characters/miles/master_fix/portrait_fix_v2.png"
+    ],
+    "sha256": "0f1a41bda12057e3ee8ff316052fcb129755fe6a0f3ad0f3fb0c8e8e37a38535"
+  }
+]

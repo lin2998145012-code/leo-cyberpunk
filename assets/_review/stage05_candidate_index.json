@@ -1,0 +1,362 @@
+[
+  {
+    "file": "assets/characters/miles/master_fix/full_fix_v1.png",
+    "source_attempt": "assets/_review/stage05_attempts/full_fix_v1_a1.png",
+    "sha256": "7863e80d205f5767e68e6d0817d60e84c4e5feba9996bd1b5b924d88dfa3843c",
+    "size": "1024x1536",
+    "background_corner_means": [
+      [
+        188.98,
+        189.36,
+        189.53
+      ],
+      [
+        188.88,
+        189.26,
+        189.48
+      ]
+    ],
+    "background_corner_ranges": [
+      [
+        [
+          188,
+          191
+        ],
+        [
+          188,
+          191
+        ],
+        [
+          188,
+          191
+        ]
+      ],
+      [
+        [
+          188,
+          190
+        ],
+        [
+          188,
+          190
+        ],
+        [
+          188,
+          191
+        ]
+      ]
+    ],
+    "final_self_check": "fail",
+    "final_reason": "肤色阴影偏棕；v1/v2目镜移位；脸与定妆并非完全一致。",
+    "background_left_mid_mean": [
+      188.57,
+      188.87,
+      189.07
+    ],
+    "background_top_to_mid_rgb_delta": [
+      -0.41,
+      -0.49,
+      -0.46
+    ]
+  },
+  {
+    "file": "assets/characters/miles/master_fix/full_fix_v2.png",
+    "source_attempt": "assets/_review/stage05_attempts/full_fix_v2_a3.png",
+    "sha256": "d4b46b8743e45a38fa012ae9c6ef3c203c17ca60058534a25d6eced5d7f39db6",
+    "size": "1024x1536",
+    "background_corner_means": [
+      [
+        187.83,
+        188.92,
+        189.54
+      ],
+      [
+        188.15,
+        189.25,
+        189.94
+      ]
+    ],
+    "background_corner_ranges": [
+      [
+        [
+          186,
+          189
+        ],
+        [
+          187,
+          191
+        ],
+        [
+          188,
+          191
+        ]
+      ],
+      [
+        [
+          187,
+          189
+        ],
+        [
+          188,
+          191
+        ],
+        [
+          188,
+          191
+        ]
+      ]
+    ],
+    "final_self_check": "fail",
+    "final_reason": "肤色阴影偏棕；v1/v2目镜移位；脸与定妆并非完全一致。",
+    "background_left_mid_mean": [
+      187.53,
+      188.58,
+      189.17
+    ],
+    "background_top_to_mid_rgb_delta": [
+      -0.3,
+      -0.34,
+      -0.37
+    ]
+  },
+  {
+    "file": "assets/characters/miles/master_fix/full_fix_v3.png",
+    "source_attempt": "assets/_review/stage05_attempts/full_fix_v3_a1.png",
+    "sha256": "66dad10987159c88b0921baf5ac6827929215b23a353dc8d59ee1e4c3fed4334",
+    "size": "1024x1536",
+    "background_corner_means": [
+      [
+        187.12,
+        188.56,
+        189.68
+      ],
+      [
+        187.67,
+        189.05,
+        190.21
+      ]
+    ],
+    "background_corner_ranges": [
+      [
+        [
+          186,
+          189
+        ],
+        [
+          187,
+          190
+        ],
+        [
+          188,
+          191
+        ]
+      ],
+      [
+        [
+          186,
+          189
+        ],
+        [
+          187,
+          191
+        ],
+        [
+          188,
+          192
+        ]
+      ]
+    ],
+    "final_self_check": "fail",
+    "final_reason": "肤色阴影偏棕；v1/v2目镜移位；脸与定妆并非完全一致。",
+    "background_left_mid_mean": [
+      186.74,
+      188.07,
+      189.12
+    ],
+    "background_top_to_mid_rgb_delta": [
+      -0.38,
+      -0.49,
+      -0.56
+    ]
+  },
+  {
+    "file": "assets/characters/miles/master_fix/portrait_fix_v1.png",
+    "source_attempt": "assets/_review/stage05_attempts/portrait_fix_v1_a1.png",
+    "sha256": "5ebc67d05e77fcc82a5472e69406162fe487933d056a9350e5cc7504a09d04a1",
+    "size": "1254x1254",
+    "background_corner_means": [
+      [
+        205.97,
+        205.47,
+        205.49
+      ],
+      [
+        206.19,
+        205.63,
+        205.68
+      ]
+    ],
+    "background_corner_ranges": [
+      [
+        [
+          205,
+          207
+        ],
+        [
+          204,
+          207
+        ],
+        [
+          204,
+          207
+        ]
+      ],
+      [
+        [
+          205,
+          208
+        ],
+        [
+          204,
+          207
+        ],
+        [
+          204,
+          207
+        ]
+      ]
+    ],
+    "final_self_check": "unsure",
+    "final_reason": "灰底视觉上接近平灰，抽样有数级像素波动；身份与平涂程度待导演验收。",
+    "background_left_mid_mean": [
+      205.44,
+      204.77,
+      204.75
+    ],
+    "background_top_to_mid_rgb_delta": [
+      -0.53,
+      -0.7,
+      -0.74
+    ]
+  },
+  {
+    "file": "assets/characters/miles/master_fix/portrait_fix_v2.png",
+    "source_attempt": "assets/_review/stage05_attempts/portrait_fix_v1_a2.png",
+    "sha256": "8f65cb37370aeb4f778ba269ea57434dba46be758ecabb7aa4d9cdf278504038",
+    "size": "1254x1254",
+    "background_corner_means": [
+      [
+        177.2,
+        179.32,
+        180.93
+      ],
+      [
+        177.66,
+        179.78,
+        181.48
+      ]
+    ],
+    "background_corner_ranges": [
+      [
+        [
+          176,
+          179
+        ],
+        [
+          178,
+          181
+        ],
+        [
+          180,
+          182
+        ]
+      ],
+      [
+        [
+          176,
+          179
+        ],
+        [
+          178,
+          181
+        ],
+        [
+          180,
+          183
+        ]
+      ]
+    ],
+    "final_self_check": "unsure",
+    "final_reason": "灰底视觉上接近平灰，抽样有数级像素波动；身份与平涂程度待导演验收。",
+    "background_left_mid_mean": [
+      177.38,
+      179.37,
+      180.83
+    ],
+    "background_top_to_mid_rgb_delta": [
+      0.18,
+      0.05,
+      -0.1
+    ]
+  },
+  {
+    "file": "assets/characters/miles/master_fix/portrait_fix_v3.png",
+    "source_attempt": "assets/_review/stage05_attempts/portrait_fix_v1_a3.png",
+    "sha256": "bb575b298fd2488d0888221311ea92cb82d9a8ae6e5d1d2c681cf4b5b50ed0f5",
+    "size": "1254x1254",
+    "background_corner_means": [
+      [
+        201.06,
+        200.54,
+        200.59
+      ],
+      [
+        201.37,
+        200.84,
+        200.95
+      ]
+    ],
+    "background_corner_ranges": [
+      [
+        [
+          200,
+          202
+        ],
+        [
+          199,
+          202
+        ],
+        [
+          199,
+          202
+        ]
+      ],
+      [
+        [
+          200,
+          203
+        ],
+        [
+          200,
+          202
+        ],
+        [
+          200,
+          202
+        ]
+      ]
+    ],
+    "final_self_check": "unsure",
+    "final_reason": "灰底视觉上接近平灰，抽样有数级像素波动；身份与平涂程度待导演验收。",
+    "background_left_mid_mean": [
+      201.24,
+      200.69,
+      200.74
+    ],
+    "background_top_to_mid_rgb_delta": [
+      0.18,
+      0.15,
+      0.15
+    ]
+  }
+]
