@@ -3,8 +3,9 @@
   "source_commit": "1f66197",
   "director_override": "不要纠结左右，这个有镜像的，无所谓",
   "left_right_mismatch_reject": false,
-  "prosthetic_light_count_waiver": "pending",
+  "prosthetic_light_count_waiver": "temporary_for_candidate_selection",
   "do_not_modify_or_mirror_originals": true,
   "generation_after_three_failures": "Per section 1.6 keep best attempt marked fail and continue remaining candidate numbers; design and prompt unchanged.",
-  "stage0_status": "candidates_complete_awaiting_director_selection"
+  "stage0_status": "candidates_complete_awaiting_director_selection",
+  "director_detail_decision": "允许，先做齐候选，细节选定后再修"
 }

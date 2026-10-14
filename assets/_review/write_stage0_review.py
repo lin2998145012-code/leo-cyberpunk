@@ -14,6 +14,6 @@ lines+=['','全身正面图不能验证背后 Z；看不见的特征不算已确
 for d in logs:
  if d['self_check']=='fail':lines.append(f'- {d["kind"]} c{d["candidate"]:02} / a{d["attempt"]}：{d["notes"]}')
 lines+=['','### 需要导演决定的问题','']
-lines+=['已按 §1.4 报告灯数问题；没有收到放宽灯数的答复，也没有修改设计或提示词。复核 §1.6 后，按“3 次都不合格，保留最好的一张，在 REVIEW.md 里标出来”继续做齐不同编号。c01、c02、c04、c05 均保留 fail，不因收录为候选而视作通过；c03、c06 可辨 5 颗灯，仍有各自的细节偏差。', '', '阶段 0 第 2 版候选与对比板已齐，等待导演验收画风和选择编号。建议先看定妆 c02/c04，以及全身 c03/c06；其余选项也完整保留。请在 assets/selections.md 中记录选中的定妆照与全身图编号，若选中存在灯数偏差的图，另行决定修复方式。未进入阶段 1。', '', '### 对比板', '', '- 定妆：[stage0_portraits.jpg](_review/stage0_portraits.jpg)', '- 全身：[stage0_fullbody.jpg](_review/stage0_fullbody.jpg)', '- 参考与候选：[stage0_style_compare.jpg](_review/stage0_style_compare.jpg)', '- 原图与生成尝试对应：[stage0_candidate_index.json](_review/stage0_candidate_index.json)']
+lines+=['导演已确认：“允许，先做齐候选，细节选定后再修”。灯数等小细节暂不阻挡候选选择，选定造型后再修；设计与固定提示词维持原样。生成时的自检与返工记录保留，记录中的“等待导演决定”是当时状态，本段为最新决定。c01、c02、c04、c05 均保留 fail，不因收录为候选而视作通过；c03、c06 可辨 5 颗灯，仍有各自的细节偏差。', '', '阶段 0 第 2 版候选与对比板已齐，等待导演验收画风和选择编号。建议先看定妆 c02/c04，以及全身 c03/c06；其余选项也完整保留。请在 assets/selections.md 中记录选中的定妆照与全身图编号，选定后修复该图的灯数等细节。未进入阶段 1。', '', '### 对比板', '', '- 定妆：[stage0_portraits.jpg](_review/stage0_portraits.jpg)', '- 全身：[stage0_fullbody.jpg](_review/stage0_fullbody.jpg)', '- 参考与候选：[stage0_style_compare.jpg](_review/stage0_style_compare.jpg)', '- 原图与生成尝试对应：[stage0_candidate_index.json](_review/stage0_candidate_index.json)']
 Path('assets/REVIEW.md').write_text('\n'.join(lines)+'\n')
 print('Updated review.')
