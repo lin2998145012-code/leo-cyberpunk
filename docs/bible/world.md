@@ -3,6 +3,9 @@
 > 《超频 OVERCLOCK》的世界设定。画面里出现的所有东西都要能在这里找到来由。
 > 相关：[人物档案](characters.md)　[导演方案](../film-overclock.md)
 
+> **提示词以 [Codex 执行文档](../codex-execution.md) 为准。** 这里的提示词是早期版本，画风描述比较简略，也没有用风格参考图。
+
+
 ---
 
 ## 1. 世界观
@@ -63,8 +66,7 @@
 
 **场景通用画风块**：
 ```
-2D anime TV series background art, flat colors, clean shapes, detailed environment,
-shadows tinted deep indigo and violet (never grey), high contrast, no characters, no text.
+Painted 2D anime background art: flat shapes and soft gradients with no outlines, dense glowing signs and screens, soft bloom around light sources, deep indigo and violet shadows (never grey), saturated cyan and red neon accents, light atmospheric haze, high contrast, no characters, no text.
 ```
 
 ---

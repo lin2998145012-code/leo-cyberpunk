@@ -128,7 +128,7 @@
 ### 4.2 画风圣经（Style Bible）
 - 用 Midjourney 等工具出 30–50 张风格探索图，挑 5–10 张最满意的作为**风格参考图**，之后每次生成都带上
 - 固定色板、线稿粗细、阴影层数、光源规则（例：阴影用深靛蓝或深紫，边缘光用青色或红色），色值参考[原片参考分析](reference-analysis.md)
-- 写一段**固定的风格提示词**，所有镜头复用：
+- 写一段**固定的风格提示词**，所有镜头复用：（最新版本见 [Codex 执行文档](codex-execution.md) 的 `{STYLE}`，下面是早期版本）
 
 ```
 2D anime TV series style, flat cel shading, single hard shadow layer,

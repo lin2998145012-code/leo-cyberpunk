@@ -2,77 +2,124 @@
 
 > **给 Codex 的任务说明。** 请从头到尾读完再开始。
 > 项目：原创动画短片《超频 OVERCLOCK》。导演是这个仓库的主人，以下简称"导演"。
-> 设定来源：[人物档案](bible/characters.md)　[世界观、场景和道具](bible/world.md)　[前期制作](preproduction.md)
+> 设定来源：[人物档案](bible/characters.md)　[世界观、场景和道具](bible/world.md)　[前期制作](preproduction.md)　[原片参考分析](reference-analysis.md)
 
 ---
 
 ## 0. 你的任务
 
-用 GPT Image 2.5 生成这部片子的**前期视觉素材**：角色定妆、角色设定包、配角、场景、道具和风格样张。素材生成后，导演会把它们上传到 Higgsfield，用来生成视频。
+用 GPT Image 2.5 生成这部片子的**前期视觉素材**，画风要和原作动画（导演提供的风格参考图）一致。素材做好后，导演会把它们上传到 Higgsfield 去生成视频。
 
-整个任务分 3 个阶段，**每个阶段结束时都要停下来，等导演确认**。不要跳过确认，自己继续往下做。
+做法参考的是 AIGC 创作者普遍采用的流程：
+
+1. **先锁画风，再做角色**：用风格参考图决定画法，用人物档案决定外观。
+2. **先做定妆照锁住脸**，再做**人物设定总图**：四个方向的全身图、6 个角度的头像和细节特写放在**同一张图里**生成。同一次生成里的多个视图，彼此天然一致。
+3. 表情用**九宫格**一次生成 9 个。
+4. 场景也用**同一张图里的多机位**来保证一致。
+
+全部工作分 5 个阶段，**每个阶段结束都要停下来等导演确认**，不要跳过确认自己往下做。
 
 | 阶段 | 内容 | 结束时 |
 | --- | --- | --- |
-| 阶段 1 | 角色、配角、场景、道具的候选图 | **停**：导演挑选 |
-| 阶段 2 | Miles 设定包、Mia 锁屏照片、场景的其他角度，并做一致性检查 | **停**：导演确认设定包 |
-| 阶段 3 | 5 张风格样张 | **停**：导演确认画风（关卡 1） |
+| 0 | 画风测试：Miles 定妆照和全身候选 | **停**：导演选定 Miles 的脸和全身，同时确认画风 |
+| 1 | Miles 设定总图 → 单独视图 → 表情九宫格 → 一致性检查 | **停**：导演确认 Miles |
+| 2 | Mia 和配角 | **停**：导演挑选 |
+| 3 | 场景和道具 | **停**：导演挑选 |
+| 4 | 5 张风格样张 | **停**：导演确认画风（关卡 1） |
 
 ---
 
 ## 1. 规则（必须遵守）
 
-### 1.1 生图工具
+### 1.1 风格参考图（重要）
+
+- 导演会把原作动画的画面截图放在 **`refs/style/`** 文件夹里，共 17 张，文件名说明了用途（`char_` 人物、`light_` 光影、`bg_` 背景、`mono_` 单色画面）。
+- 这些图**只用来学画法**：线条、脸和眼睛的画法、身体比例、阴影、配色。**不能复制图里的任何角色、脸、发型、服装、标志、水印、字幕或文字。**
+- 这些图里有平台水印和字幕，提示词里已经要求模型忽略。**不要修改、裁剪这些图，也不要去掉水印。**
+- **`refs/style/` 里的图绝对不能提交到仓库**（已经写进 `.gitignore`），也不要复制到 `assets/` 下面。
+- 阶段 0 结束后，导演选定的 Miles 定妆照就成了**我们自己的风格基准**。之后的任务优先用我们自己的图当风格参考，原作截图每次最多用 2 张。
+
+### 1.2 生图工具
 
 - 使用你内置的图像生成工具，模型是 **GPT Image 2.5**：
-  - **只用文字生成的任务**（候选图、场景全景、道具）用 `gpt-image-2.5-flare`
-  - **带参考图的任务**（设定包、角度图、风格样张）用 `gpt-image-2.5-sunburst`，它的编辑精度更高
+  - 只用文字生成的任务用 `gpt-image-2.5-flare`
+  - **带参考图的任务**用 `gpt-image-2.5-sunburst`（本文档里几乎所有任务都带参考图）
   - 如果工具不让你选模型，就用默认模型，并在 manifest 里记下实际用的是哪个
-- **如果内置的图像生成工具不可用，立即停止并告诉导演。** 不要自己改用 API 密钥调用 OpenAI 的接口，那会产生额外费用，必须由导演明确同意。
+- **每次生成最多附 4 张参考图。**
+- **如果内置的图像生成工具不可用，或者不接受参考图，立即停止并告诉导演。** 不要自己改用 API 密钥，那会产生额外费用，必须由导演明确同意。
+- 如果生成被内容政策拒绝，把拒绝信息原样记进 REVIEW.md 并告诉导演，不要自己想办法绕过。
 - 质量统一用 `high`。
 
-### 1.2 尺寸
+### 1.3 尺寸
 
 | 用途 | 尺寸 |
 | --- | --- |
-| 全身图、竖构图 | `1024x1536` |
-| 脸部特写、表情 | `1024x1024` |
-| 场景、风格样张、多角度设定图（16:9） | `1792x1008` |
+| 定妆照（胸像）、单独的头像 | `1024x1024` |
+| 单人全身图 | `1024x1536` |
+| 人物设定总图、场景多机位图 | `2560x1440` |
+| 表情九宫格 | `2048x2048` |
+| 场景、道具、风格样张（16:9） | `1792x1008` |
 
-### 1.3 内容规则
+### 1.4 内容规则
 
-- **图里不能出现任何文字**：标签、标注、水印、签名、视图名称（比如 "FRONT"）都不行。生成出来带字的，重新生成。
-- **提示词里不能出现**任何现成作品名、工作室名、艺术家名或别的作品里的角色名。版权过滤会拦截，而且这是原创作品。
-- **不要改动设计。** 提示词里写的外形、颜色、左右位置都是导演定的。连续 3 次都生成不对的，在 REVIEW.md 里记下来，问导演，不要自己改提示词里的设计内容。
-- **提示词整段复制，不要改写。** 第 2 节的固定块每次都原样使用。
+- **生成的图里不能有任何文字**：标签、编号、视图名称、水印、签名都不行。带字的重新生成。
+- **提示词里不能出现**任何现成作品名、工作室名、艺术家名或别的作品里的角色名。
+- **不要改动设计。** 外形、颜色、左右位置都是导演定的。连续 3 次都生成不对，就记进 REVIEW.md 问导演，不要自己改提示词里的设计内容。
+- **提示词整段复制，不要改写。** 第 2 节的固定块每次原样使用。
 
-### 1.4 文件规则
+### 1.5 文件规则
 
-- 在一个新分支上工作：`codex/assets`，从当前分支切出来。
-- 所有图片存成 PNG，放在 `assets/` 下，路径和文件名按每个任务写的来。
-- 每生成一张图，都在 `assets/manifest.csv` 里加一行（格式见第 7 节）。
-- 每个阶段结束时更新 `assets/REVIEW.md`（格式见第 7 节）。
+- 在新分支 `codex/assets` 上工作，从当前分支切出来。
+- 所有图片存成 PNG，放在 `assets/` 下，路径和文件名按任务写的来。
+- 每生成一张图，都在 `assets/manifest.csv` 里加一行（格式见第 8 节），`refs` 一栏写清楚用了哪几张参考图。
+- 每个阶段结束时更新 `assets/REVIEW.md`。
 - **除了 `assets/` 目录，不要修改仓库里的其他文件。**
-- 每个阶段结束时提交并推送，提交信息写清楚是哪个阶段。
+- 每个阶段结束时提交并推送。
 
-### 1.5 你能自己检查的事
+### 1.6 自检
 
-你可以看图。每张图生成后，自己先检查一遍：
-- 有没有文字
-- 角色图：5 个锚点对不对，**左右有没有反**（见第 2.4 节）
-- 设定图：背景是不是浅灰纯色、光线是不是均匀
+你能看图。每张图生成后先自己检查：
+1. 有没有文字
+2. **画风**：和风格参考图比，线条是不是一样细、一样干净？眼睛是不是窄而上挑、上睫毛线很粗？是不是只有一层硬边阴影、阴影带靛蓝或紫色？有没有出现原作里没有的柔和渐变、光泽感或 3D 感？
+3. **有没有抄原作的角色**：脸、发型、服装是不是太像风格参考图里的某个角色？比如黄色夹克、原作角色的发型。像的话重新生成。
+4. 角色图：5 个锚点对不对，**左右有没有反**（见第 2.7 节）
 
-不合格的直接重新生成，**每个任务最多重试 3 次**。3 次都不合格，就保留最好的一张，在 REVIEW.md 里标出来。
+不合格就重新生成，**每个任务最多重试 3 次**。3 次都不合格，保留最好的一张，在 REVIEW.md 里标出来。
 
 ---
 
 ## 2. 固定提示词块
 
-下面的块在任务里用 `{名字}` 引用。**使用时替换成下面的原文，一个字都不要改。**
+任务里用 `{名字}` 引用。使用时替换成下面的原文，一个字都不要改。
+
+### {USE_STYLE_REFS}
+```
+The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.
+```
+
+### {STYLE}
+```
+2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.
+```
+
+### {STYLE_BG}
+```
+Painted 2D anime background art: flat shapes and soft gradients with no outlines, dense glowing signs and screens, soft bloom around light sources, deep indigo and violet shadows (never grey), saturated cyan and red neon accents, light atmospheric haze, high contrast, no characters, no text.
+```
+
+### {SHEET}
+```
+Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.
+```
 
 ### {MILES}
 ```
 Miles: a 19-year-old slim young man, narrow face, sharp chin, narrow upturned eyes with pale teal-grey irises, a vertical scar cutting through his left eyebrow, short black hair with the right side shaved and a single cyan streak in his left fringe, three small silver studs in his right ear, a square metal data port on the left side of his neck with a tiny red light, oversized deep-teal courier jacket with bright cyan reflective stripes and a high collar, black cargo pants with the left leg cut off at the knee, left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights, a thin transparent cyan AR visor across his eyes.
+```
+
+### {KEEP_MILES}
+```
+The character is Miles from our character references. Keep his face, hair, cyan streak, eyebrow scar, ear studs, neck port, jacket, prosthetic leg and colors exactly the same. Do not mirror him: the cyan streak and the scar are on his left side, the ear studs on his right ear, the prosthetic on his left leg.
 ```
 
 ### {MIA}
@@ -80,105 +127,256 @@ Miles: a 19-year-old slim young man, narrow face, sharp chin, narrow upturned ey
 Mia: a 7-year-old girl, round face, big eyes with pale teal-grey irises, short black bob haircut with straight bangs, an oversized mustard-gold knitted sweater with sleeves covering her hands, a slightly crooked golden paper crown she made herself.
 ```
 
-### {STYLE}
-```
-2D anime TV series style, flat cel shading with a single hard-edged shadow tone, thin clean dark lineart of even weight, bold saturated colors, shadows tinted deep indigo and violet (never grey), hard-edged cyan rim light, high contrast, angular expressive character design.
-```
-
-### {BG_STYLE}
-```
-2D anime TV series background art, flat colors, clean shapes, detailed environment, shadows tinted deep indigo and violet (never grey), high contrast, no characters, no text.
-```
-
-### {SHEET}
-```
-Plain light grey background, flat even lighting, no text, no labels, no watermark.
-```
-
-### {KEEP_MILES}
-```
-The character is Miles from the reference images. Keep his face, hair, cyan streak, eyebrow scar, ear studs, neck port, jacket, prosthetic leg and colors exactly the same as in the references. Do not mirror the character: the cyan streak and scar are on his left side, the ear studs on his right ear, the prosthetic on his left leg.
-```
-
-### 2.4 Miles 的 5 个锚点（检查用）
+### 2.7 Miles 的 5 个锚点（检查用）
 
 | 锚点 | 正确 | 常见错误 |
 | --- | --- | --- |
-| 青色挑染 | **左边**刘海 | 画到右边、挑染太多、整头染色 |
+| 青色挑染 | **左边**刘海 | 画到右边、整头染色 |
 | 疤 | 竖疤切断**左眉** | 画到右眉、横疤、没有疤 |
 | 耳钉 | **右耳**三颗银色 | 画到左耳、数量不对、金色 |
 | 颈部接口 | **左颈**方形金属，一颗小红灯 | 画到右边、圆形 |
-| 义肢 | **左小腿**枪灰色，5 颗灯，**左**裤腿在膝盖处剪掉 | 画到右腿、两条腿都正常、整条腿都是机械 |
+| 义肢 | **左小腿**枪灰色，5 颗灯，**左**裤腿在膝盖处剪掉 | 画到右腿、两条腿都正常 |
 
-注意：角色**面向镜头**时，他的左边在画面的**右侧**。检查时以角色自己的左右为准。
-
-另外：**Miles 身上不能出现暖金色**，金色只属于 Mia。
+角色面向镜头时，他的左边在画面的**右侧**。以角色自己的左右为准。另外，Miles 身上不能出现暖金色。
 
 ---
 
-## 3. 阶段 1：候选图
+## 3. 阶段 0：画风测试和 Miles 定妆
 
-本阶段的任务互相独立，可以按任意顺序做。
+### T0.1 定妆照候选（8 张）
 
-### T1.1 Miles 定妆候选（12 张）
-
-- 模型：flare　尺寸：`1024x1536`
-- 输出：`assets/characters/miles/candidates/miles_c01.png` … `miles_c12.png`
+- 尺寸：`1024x1024`
+- 风格参考：`refs/style/char_david_smile.jpg`、`char_lucy_closeup.jpg`、`char_gloria_profile.jpg`、`char_david_teal.jpg`
+- 输出：`assets/characters/miles/portrait/miles_portrait_c01.png` … `c08.png`
 - 提示词：
 ```
-Character design, full body, front view, neutral standing pose, arms relaxed at his sides. {SHEET}
+{USE_STYLE_REFS}
+Character portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. {SHEET}
 {MILES}
 {STYLE}
 ```
-- 12 张都用同一个提示词。想要的是**同一个设计的不同诠释**，供导演挑选。
-- 自检：5 个锚点。左右错了的不算候选，重新生成补足 12 张。
 
-### T1.2 Mia 定妆候选（6 张）
+### T0.2 全身候选（6 张）
 
-- 模型：flare　尺寸：`1024x1536`
-- 输出：`assets/characters/mia/candidates/mia_c01.png` … `mia_c06.png`
+- 尺寸：`1024x1536`
+- 风格参考：`refs/style/char_fullbody_station.jpg`、`char_group_fullbody.jpg`、`char_dorio_action.jpg`
+- 输出：`assets/characters/miles/fullbody/miles_full_c01.png` … `c06.png`
 - 提示词：
 ```
-Character design, full body, front view, standing with both hands holding the edge of her paper crown, a shy smile. {SHEET}
+{USE_STYLE_REFS}
+Full-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg. {SHEET}
+{MILES}
+{STYLE}
+```
+
+### 阶段 0 结束
+
+1. 对比图：`assets/_review/stage0_portraits.jpg`、`assets/_review/stage0_fullbody.jpg`。把候选图拼成一张，左上角标上编号（这是唯一允许出现文字的地方，编号是你后期加的）。
+2. 再做一张**画风对照图** `assets/_review/stage0_style_compare.jpg`：左边放 2 张风格参考图，右边放 2 张你认为画风最接近的候选，方便导演对比。
+3. REVIEW.md：每张候选写一两句客观观察，包括画风哪里像、哪里不像，**不替导演做选择**。
+4. 提交、推送，然后**停下来**："阶段 0 完成，请在 `assets/selections.md` 里写下选中的定妆照和全身图编号。如果画风还不够像，请告诉我哪里不像。"
+
+如果导演说画风不像，按导演的意见调整，重新做阶段 0。**画风没有确认之前，不要开始阶段 1。**
+
+---
+
+## 4. 阶段 1：Miles 设定总图
+
+**开始前**：读 `assets/selections.md`，把选中的定妆照复制成 `assets/characters/miles/miles_portrait_master.png`，选中的全身图复制成 `assets/characters/miles/miles_full_master.png`。**选定之后不再重新生成这两张。**
+
+### T1.1 人物设定总图（3 张候选）
+
+- 尺寸：`2560x1440`
+- 参考图：`miles_portrait_master.png`、`miles_full_master.png`、`refs/style/char_fullbody_station.jpg`、`refs/style/char_group_fullbody.jpg`
+- 输出：`assets/characters/miles/sheet/miles_sheet_c01..c03.png`
+- 提示词：
+```
+{KEEP_MILES}
+{USE_STYLE_REFS}
+A professional character model sheet of Miles in one image. Layout:
+Left two thirds: four full-body views standing side by side at exactly the same height and proportions: front view, three-quarter view of his left side, exact side profile of his left side, back view. Neutral standing pose, arms slightly away from the body, the delivery box on his back only in the back view.
+Right third, top: six head studies of the same face: front, three-quarter left, profile left, three-quarter right, looking up, looking down.
+Right third, bottom: close-ups of the prosthetic left lower leg, the neck data port, his right ear with three silver studs, his left eyebrow scar, the AR visor.
+Along the bottom edge: a row of plain color swatches of his colors.
+{SHEET}
+{MILES}
+{STYLE}
+```
+
+### 阶段 1 中途确认
+
+做完 T1.1 先停下来，把 3 张候选给导演挑，导演把选中的编号写进 `assets/selections.md`（`miles_sheet: c02`）。选中的复制成 `assets/characters/miles/miles_sheet_master.png`。
+
+### T1.2 单独视图（从设定总图里重画成大图）
+
+设定总图上每个视图都太小，所以要单独重画成大图。**设计以设定总图为准。**
+
+- 参考图：`miles_sheet_master.png`、`miles_portrait_master.png`、`miles_full_master.png`
+- 输出：`assets/characters/miles/pack/`
+- 提示词 = `{KEEP_MILES}` + `Redraw only the ` + 下表的视图 + ` from the model sheet as a single large image, with exactly the same design, proportions and colors.` + `{SHEET}` + `{STYLE}`
+
+| 文件名 | 尺寸 | 视图 |
+| --- | --- | --- |
+| `miles_01_front_full.png` | `1024x1536` | `front full-body view` |
+| `miles_02_threequarter_full.png` | `1024x1536` | `three-quarter full-body view of his left side` |
+| `miles_03_side_full.png` | `1024x1536` | `side profile full-body view of his left side` |
+| `miles_04_back_full.png` | `1024x1536` | `back full-body view` |
+| `miles_05_face_front.png` | `1024x1024` | `front head study, with the AR visor over his eyes` |
+| `miles_06_face_threequarter.png` | `1024x1024` | `three-quarter left head study` |
+| `miles_07_face_profile.png` | `1024x1024` | `left profile head study` |
+| `miles_08_prosthetic.png` | `1792x1008` | `prosthetic leg close-up, shown twice side by side: once with the lights white and the third light broken and dark, once with all working lights glowing red` |
+
+### T1.3 表情九宫格（2 张候选）
+
+- 尺寸：`2048x2048`
+- 参考图：`miles_portrait_master.png`、`miles_sheet_master.png`、`refs/style/char_david_smile.jpg`、`refs/style/char_lucy_closeup.jpg`
+- 输出：`assets/characters/miles/expressions/miles_expr_grid_c01..c02.png`
+- 提示词：
+```
+{KEEP_MILES}
+{USE_STYLE_REFS}
+A 3x3 grid of nine head-and-shoulders close-ups of Miles, the same face at the same slight three-quarter angle in every panel, the AR visor raised onto his hair. Each panel shows a different expression, in this order from top left to bottom right:
+1 neutral; 2 determined, jaw set, eyes narrowed; 3 exhausted and out of breath, sweat on his face; 4 tender smile, only the left corner of his mouth rises; 5 shocked, eyes wide; 6 holding back tears, lips pressed together; 7 gritted teeth in pain; 8 smug crooked smile, only the left corner of his mouth rises; 9 empty, hollow stare.
+Thin gutters between the panels. {SHEET}
+{STYLE}
+```
+
+### T1.4 一致性检查
+
+1. 按 `tools/check_consistency.py` 文件开头的说明建虚拟环境、装依赖。第一次运行会从 HuggingFace 下载模型。
+2. 建好 `assets/characters/miles/master_ref/`，放入 `miles_portrait_master.png` 和 `miles_full_master.png` 两张，然后运行：
+```bash
+python tools/check_consistency.py --ref assets/characters/miles/master_ref/ --shots assets/characters/miles/pack/ -o assets/_review/miles_pack_consistency.csv
+```
+3. 标为"返工候选"的图，加上你自检时锚点不对的图，重新生成，每张最多 2 次，然后再跑一遍检查。
+4. 把报告的前 5 行和锚点检查结果写进 REVIEW.md。工具只负责排序，最后由人眼判断；两者冲突时，两种结论都写下来。
+
+如果你的运行环境下载不了模型，就跳过这一步，在 REVIEW.md 里说明。
+
+### 阶段 1 结束
+
+1. 对比图：`assets/_review/stage1_miles.jpg`，包括设定总图、8 张单独视图和表情九宫格
+2. 更新 REVIEW.md，提交、推送
+3. **停下来**："阶段 1 完成，请确认 Miles 的设定总图、单独视图和表情九宫格，并在 `assets/selections.md` 里写下选中的表情九宫格。"
+
+---
+
+## 5. 阶段 2：Mia 和配角
+
+从这一阶段开始，**风格参考优先用我们自己的图**：`miles_sheet_master.png` 和 `miles_portrait_master.png`，原作截图最多加 1 张。
+
+### T2.1 Mia 定妆照（6 张候选）
+
+- 尺寸：`1024x1024`
+- 参考图：`miles_portrait_master.png`（只学画风，**不是**要画 Miles）、`refs/style/char_lucy_closeup.jpg`
+- 输出：`assets/characters/mia/portrait/mia_portrait_c01..c06.png`
+- 提示词：
+```
+{USE_STYLE_REFS}
+The reference images are style references only; draw a new character. Character portrait: head and shoulders of a 7-year-old girl, front view, a bright smile. {SHEET}
+{MIA}
+{STYLE}
+Child proportions: a larger head and rounder face than an adult, while keeping the same line and shading style.
+```
+
+**停下来**，等导演选定 Mia 的定妆照，复制成 `assets/characters/mia/mia_portrait_master.png`。
+
+### T2.2 Mia 设定图（2 张候选）
+
+- 尺寸：`2560x1440`
+- 参考图：`mia_portrait_master.png`、`miles_sheet_master.png`（只学版式和画风）
+- 输出：`assets/characters/mia/sheet/mia_sheet_c01..c02.png`
+- 提示词：
+```
+The girl is Mia from the portrait reference. Keep her face, hair, sweater, paper crown and colors exactly the same. Use the layout and drawing style of the model sheet reference, but draw only Mia.
+A character model sheet of Mia in one image: left half, three full-body views at the same height: front, side, back. Right half, top: three head studies: front, three-quarter, profile. Right half, bottom: four small head close-ups with expressions: laughing, pouting, sleepy, excited.
+{SHEET}
 {MIA}
 {STYLE}
 ```
 
-### T1.3 配角设定图（各 3 张）
+### T2.3 Mia 锁屏照片（3 张）
 
-模型：flare　尺寸：`1792x1008`
-
-| 编号 | 输出 | 提示词 |
-| --- | --- | --- |
-| T1.3a | `assets/characters/robot/robot_c01..03.png` | `Character design sheet of a small delivery service robot: white egg-shaped body on wheels, about 80 cm tall, a round screen face showing a simple smiling face, two thin mechanical arms, a cyan Z-shaped logo on its body. Front, side and back views. {SHEET}` 后接 `{STYLE}` |
-| T1.3b | `assets/characters/drone/drone_c01..03.png` | `Design sheet of a black police drone: four rotors, a single red mechanical eye with an iris that can contract, red and blue police lights on both sides. Front, side, top views and a close-up of the eye. {SHEET}` 后接 `{STYLE}` |
-| T1.3c | `assets/characters/mascot/mascot_c01..03.png` | `Mascot design of a cheerful cartoon delivery rider: big head, smiling closed eyes, giving a thumbs up, wearing a brand-new deep-teal courier jacket with bright cyan reflective stripes, both legs normal and healthy. Front view and a three-quarter view. Plain light grey background, flat colors, no text.` |
-
-### T1.4 场景全景（6 个场景，各 3 张）
-
-- 模型：flare　尺寸：`1792x1008`
-- 输出：`assets/locations/L1_shaft/L1_c01..03.png`，其他场景同理（`L2_highway`、`L3_adwall`、`L4_corridor`、`L5_lobby`、`L6_rooftop`）
-- 每个场景的提示词 = 下表的描述 + 一个空格 + `{BG_STYLE}`
-
-| 场景 | 描述 |
-| --- | --- |
-| L1 天井 | `Straight-down aerial view into a vast vertical city shaft at night: dozens of stacked elevated highways spiral down the walls of the shaft into darkness, thousands of tiny cyan car lights flow along them like current on a circuit board, rain falling toward the camera, deep indigo and violet buildings with small neon signs.` |
-| L2 高架 | `An elevated highway suspended between skyscrapers at night, completely jammed: a convoy of black armored corporate vehicles blocks all lanes, police drones with red and blue lights hover above, rain, wet car roofs reflecting cyan and red neon, deep indigo ambient light. Wide front view.` |
-| L3 广告墙 | `A skyscraper facade next to an elevated highway at night, the entire wall is a giant illuminated advertisement showing a cheerful cartoon delivery rider mascot giving a thumbs up, the space left blank where the slogan will go. Rain, cyan and white light from the ad, deep indigo surroundings.` |
-| L4 走廊 | `A long, spotless corridor at the top of a corporate tower: white walls, glossy floor, thin cyan light strips along the ceiling, a glass door at the far end. Pale sterile white-cyan light, low saturation, perfectly symmetrical one-point perspective.` |
-| L5 大厅 | `An empty, spotless white delivery lobby at the top of a corporate tower: a package scanner on the wall with a blank cyan screen, a glossy white floor, soft elevator-lobby atmosphere, a small cyan Z-shaped logo on the wall. Pale sterile white-cyan light, low saturation, clean and silent. Wide fixed shot.` |
-| L6 天台 | `The edge of a skyscraper rooftop at night, the whole vertical city glowing far below, strong wind, a low metal railing, dark indigo sky, distant cyan and red city lights. Lonely, quiet atmosphere. Extreme wide shot.` |
-
-自检：**画面里不能有人物**；场景 L3 的广告上不能有文字。
-
-### T1.5 道具设定图（6 件，各 2 张）
-
-- 模型：flare　尺寸：`1792x1008`
-- 输出：`assets/props/<道具>/<道具>_c01..02.png`
-- 提示词模板：
+- 尺寸：`1024x1536`
+- 参考图：`mia_portrait_master.png`、Mia 选中的设定图
+- 输出：`assets/characters/mia/mia_photo_v1..v3.png`
+- 提示词：
 ```
-Prop design sheet of {道具描述}, multiple orthographic views (front, side, back, top). {SHEET} Consistent proportions.
-2D anime TV series style, flat cel shading with a single hard-edged shadow tone, thin clean dark lineart of even weight.
+The girl is Mia from the references. Keep her face, hair, sweater, paper crown and colors exactly the same.
+A phone photo of Mia at home, smiling at the camera with both hands raised, showing off her paper crown. Warm golden indoor light, slightly overexposed edges like a phone beauty filter, a cozy small room in the background, no text.
+{MIA}
+{STYLE}
+```
+
+### T2.4 配角设定图（各 3 张候选）
+
+- 尺寸：`1792x1008`
+- 参考图：`miles_sheet_master.png`（只学画风）、`refs/style/char_fullbody_station.jpg`
+- 输出：`assets/characters/<robot|drone|mascot>/<名字>_c01..c03.png`
+- 提示词 = `{USE_STYLE_REFS}` + 下表内容 + `{SHEET}` + `{STYLE}`
+
+| 名字 | 内容 |
+| --- | --- |
+| `robot` | `Design sheet of a small delivery service robot: white egg-shaped body on wheels, about 80 cm tall, a round screen face showing a simple smiling face, two thin mechanical arms, a cyan Z-shaped logo on its body. Front, side and back views.` |
+| `drone` | `Design sheet of a black police drone: four rotors, a single red mechanical eye with an iris that can contract, red and blue police lights on both sides. Front, side, top views and a close-up of the eye.` |
+| `mascot` | `Mascot design of a cheerful cartoon delivery rider: big head, smiling closed eyes, giving a thumbs up, wearing a brand-new deep-teal courier jacket with bright cyan reflective stripes, both legs normal and healthy. Front view and a three-quarter view. Simpler and rounder than the main characters, like an advertising mascot.` |
+
+### 阶段 2 结束
+
+对比图 `assets/_review/stage2_cast.jpg`，更新 REVIEW.md，提交、推送，**停下来**等导演挑选。
+
+---
+
+## 6. 阶段 3：场景和道具
+
+### T3.1 场景全景（6 个场景，各 3 张候选）
+
+- 尺寸：`1792x1008`
+- 输出：`assets/locations/<场景>/<场景>_c01..c03.png`
+- 提示词 = `{USE_STYLE_REFS}` + 场景描述 + `{STYLE_BG}`
+- 每个场景用的风格参考：
+
+| 场景文件夹 | 风格参考 | 描述 |
+| --- | --- | --- |
+| `L1_shaft` | `bg_city_window`、`light_club_purple` | `Straight-down aerial view into a vast vertical city shaft at night: dozens of stacked elevated highways spiral down the walls of the shaft into darkness, thousands of tiny cyan car lights flow along them like current on a circuit board, rain falling toward the camera, deep indigo and violet buildings with small neon signs.` |
+| `L2_highway` | `bg_city_window`、`bg_station` | `An elevated highway suspended between skyscrapers at night, completely jammed: a convoy of black armored corporate vehicles blocks all lanes, police drones with red and blue lights hover above, rain, wet car roofs reflecting cyan and red neon, deep indigo ambient light. Wide front view.` |
+| `L3_adwall` | `bg_city_window`、`light_club_purple` | `A skyscraper facade next to an elevated highway at night, the entire wall is a giant illuminated advertisement showing a cheerful cartoon delivery rider mascot giving a thumbs up, the slogan area left blank. Rain, cyan and white light from the ad, deep indigo surroundings.` |
+| `L4_corridor` | `bg_corp_hall`、`char_gloria_profile` | `A long, spotless corridor at the top of a corporate tower: white walls, glossy floor, thin cyan light strips along the ceiling, a glass door at the far end. Pale sterile white-cyan light, low saturation, perfectly symmetrical one-point perspective.` |
+| `L5_lobby` | `bg_corp_hall`、`char_gloria_profile` | `An empty, spotless white delivery lobby at the top of a corporate tower: a package scanner on the wall with a blank cyan screen, a glossy white floor, a small cyan Z-shaped logo on the wall. Pale sterile white-cyan light, low saturation, clean and silent. Wide fixed shot.` |
+| `L6_rooftop` | `bg_city_window`、`light_rimsilhouette` | `The edge of a skyscraper rooftop at night, the whole vertical city glowing far below, strong wind, a low metal railing, dark indigo sky, distant cyan and red city lights. Lonely, quiet atmosphere. Extreme wide shot.` |
+
+风格参考文件都在 `refs/style/` 下，后缀是 `.jpg`。
+
+**停下来**，等导演选定每个场景的全景，复制成 `<场景>_master.png`。
+
+### T3.2 场景多机位图（需要多个角度的 4 个场景）
+
+在同一张图里生成同一个场景的多个角度，保证一致。
+
+- 尺寸：`2560x1440`
+- 参考图：该场景的 `<场景>_master.png`
+- 输出：`assets/locations/<场景>/<场景>_angles.png`
+- 提示词 = `A 2x2 grid showing the same location as the reference image from four camera angles, with the same design, lighting and colors in all four panels: ` + 下表的四个角度 + `. Thin gutters between panels.` + `{STYLE_BG}`
+
+| 场景 | 四个角度 |
+| --- | --- |
+| `L2_highway` | `1 wide front view; 2 side view along the jam; 3 low angle from just above a car roof; 4 high angle looking down on the convoy` |
+| `L3_adwall` | `1 extreme high-angle fisheye view from the highway edge straight down the 100-story drop beside the facade; 2 medium view of the facade with the mascot's face and thumbs up; 3 low angle looking up the facade; 4 side view of the facade from the highway` |
+| `L5_lobby` | `1 wide fixed shot; 2 close-up of the package scanner; 3 reverse angle toward the corridor door; 4 low angle across the glossy floor` |
+| `L6_rooftop` | `1 extreme wide shot; 2 medium shot of the railing; 3 close view of the railing with the city lights far below strongly out of focus; 4 looking straight down from the edge` |
+
+然后把镜头需要的角度单独重画成 `1792x1008` 的大图，命名为 `<场景>_<角度编号>.png`，比如 `L3_adwall_1.png`。提示词：`Redraw only panel [编号] of the reference grid as a single large image, with exactly the same design, lighting and colors.` + `{STYLE_BG}`。
+
+### T3.3 道具设定图（6 件，各 2 张候选）
+
+- 尺寸：`1792x1008`
+- 参考图：`miles_sheet_master.png`（只学画风）
+- 输出：`assets/props/<道具>/<道具>_c01..c02.png`
+- 提示词：
+```
+{USE_STYLE_REFS}
+Prop design sheet of {道具描述}, multiple orthographic views (front, side, back, top), consistent proportions. {SHEET}
+{STYLE}
 ```
 
 | 文件夹 | {道具描述} |
@@ -190,176 +388,68 @@ Prop design sheet of {道具描述}, multiple orthographic views (front, side, b
 | `lighter` | `a cheap transparent plastic lighter with visible fuel inside and a flint wheel` |
 | `package` | `a small white cardboard parcel box with a blank white label` |
 
-### 阶段 1 结束
-
-1. 为每一组候选图做一张**对比图**：把同一组的图拼成一张，每张图左上角标上编号（比如 `c03`），存到 `assets/_review/stage1_<组名>.jpg`。这是唯一允许出现文字的地方：编号是你后期加上去的，不是生成的。
-2. 更新 `assets/REVIEW.md`：每组候选图写一两句客观观察（比如"c04 的耳钉画到了左耳""c07 线条最干净"），**不要替导演做选择**。
-3. 提交、推送。
-4. **停下来**，告诉导演："阶段 1 完成，请在 `assets/selections.md` 里写下每组选中的编号。"
-
-`assets/selections.md` 由导演填写，格式：
-```
-miles: c07
-mia: c02
-robot: c01
-drone: c03
-mascot: c02
-L1: c02
-L2: c01
-...
-scooter: c01
-...
-```
-
----
-
-## 4. 阶段 2：设定包和角度图
-
-**开始前**：读 `assets/selections.md`。把每组选中的图复制一份，命名为 `<名字>_master.png`，放在同一个角色、场景或道具文件夹下，例如 `assets/characters/miles/miles_master.png`。**母版一旦选定就不要重新生成。**
-
-### T2.1 Miles 设定包（13 张，加上母版共 14 张）
-
-- 模型：sunburst
-- 参考图：`miles_master.png`。从第 06 张开始，再加上已经生成的 `miles_05_face_front.png`，一共两张参考图
-- 输出：`assets/characters/miles/pack/`
-- 每张的提示词 = `{KEEP_MILES}` + 下表的内容 + `{SHEET}` + `{STYLE}`
-
-| 文件名 | 尺寸 | 内容 |
-| --- | --- | --- |
-| `miles_01_front_full.png` | — | **直接复制母版，不生成** |
-| `miles_02_threequarter_full.png` | `1024x1536` | `Three-quarter view from his left side, full body, neutral standing pose.` |
-| `miles_03_side_full.png` | `1024x1536` | `Exact side profile view of his left side, full body, neutral standing pose.` |
-| `miles_04_back_full.png` | `1024x1536` | `Back view, full body, neutral standing pose, the delivery box on his back.` |
-| `miles_05_face_front.png` | `1024x1024` | `Close-up of his face, front view, neutral expression, AR visor over his eyes.` |
-| `miles_06_face_threequarter.png` | `1024x1024` | `Close-up of his face, three-quarter view from his left side, neutral expression.` |
-| `miles_07_face_profile.png` | `1024x1024` | `Close-up of his face, exact side profile of his left side, neutral expression.` |
-| `miles_08_expr_determined.png` | `1024x1024` | `Close-up of his face, front view, determined expression, jaw set, eyes narrowed.` |
-| `miles_09_expr_exhausted.png` | `1024x1024` | `Close-up of his face, front view, exhausted and out of breath, sweat on his face.` |
-| `miles_10_expr_tender.png` | `1024x1024` | `Close-up of his face, three-quarter view, a tender, soft smile, only the left corner of his mouth rises.` |
-| `miles_11_expr_shocked.png` | `1024x1024` | `Close-up of his face, front view, shocked, eyes wide.` |
-| `miles_12_expr_holdingtears.png` | `1024x1024` | `Close-up of his face, front view, holding back tears, eyes wet, lips pressed together.` |
-| `miles_13_prosthetic.png` | `1792x1008` | `Close-up design sheet of his left lower leg prosthetic only: cheap scratched gunmetal casing with cracks, a row of five small lights. Two versions side by side: left version with the lights white and the third light broken and dark, right version with all working lights glowing red.` |
-| `miles_14_visor_up.png` | `1024x1024` | `Close-up of his face, front view, the AR visor pushed up onto his hair, a crooked tired smile, only the left corner of his mouth rises.` |
-
-### T2.2 设定包一致性检查
-
-1. 按 `tools/check_consistency.py` 文件开头的说明，建一个虚拟环境并安装依赖。第一次运行时，它会从 HuggingFace 下载模型。
-2. 运行：
-```bash
-python tools/check_consistency.py --ref assets/characters/miles/master_ref/ --shots assets/characters/miles/pack/ -o assets/_review/miles_pack_consistency.csv
-```
-   运行前先建好 `assets/characters/miles/master_ref/`，里面只放 `miles_master.png` 一张图。
-3. 报告里被标为"返工候选"的图，加上你自检时锚点不对的图，**重新生成，每张最多 2 次**。重新生成后再跑一遍检查。
-4. 把最终报告的前 5 行和你的锚点检查结果写进 REVIEW.md。
-5. **检查工具只负责排序，最后要靠人眼判断。** 工具和你的判断冲突时，两种结论都写下来。
-
-如果你的运行环境下载不了模型，就跳过第 1–3 步，在 REVIEW.md 里说明，导演会另找人跑。
-
-### T2.3 Mia 锁屏照片
-
-- 模型：sunburst　参考图：`mia_master.png`　尺寸：`1024x1536`
-- 输出：`assets/characters/mia/mia_photo_lockscreen.png`，生成 3 张：`_v1..v3`
-- 提示词：
-```
-The girl is Mia from the reference image. Keep her face, hair, sweater, paper crown and colors exactly the same.
-A phone photo of Mia at home, smiling at the camera with both hands raised, showing off her paper crown. Warm golden indoor light, slightly overexposed edges like a phone beauty filter, cozy small room in the background, no text.
-{MIA}
-2D anime TV series style, flat cel shading with a single hard-edged shadow tone, thin clean dark lineart of even weight, warm golden palette.
-```
-
-### T2.4 场景的其他角度
-
-- 模型：sunburst　参考图：该场景的 `<场景>_master.png`　尺寸：`1792x1008`
-- 每张的提示词 = `Same location as the reference image, same design, lighting and colors.` + 下表的内容 + `{BG_STYLE}`
-- 输出：放在对应的场景文件夹下
-
-| 文件名 | 内容 |
-| --- | --- |
-| `L2_side.png` | `Side view along the jammed highway, cars receding into the distance.` |
-| `L2_roof_low.png` | `Low angle from just above the roof of one jammed car, rain splashing, the convoy behind.` |
-| `L3_fisheye_down.png` | `Extreme high-angle fisheye view from the edge of the highway looking straight down the 100-story drop beside the advertisement facade.` |
-| `L3_facade_mid.png` | `Medium view of the advertisement facade, the mascot's face and thumbs up filling the frame, slogan area blank.` |
-| `L5_scanner.png` | `Close-up of the package scanner on the wall, blank cyan screen.` |
-| `L6_railing_bg.png` | `Close view of the rooftop railing with the city lights far below, strongly out of focus, for use as a close-up background.` |
-
-### 阶段 2 结束
-
-1. 对比图：`assets/_review/stage2_miles_pack.jpg`（14 张拼在一起）和 `assets/_review/stage2_locations.jpg`
-2. 更新 REVIEW.md，写进一致性检查的结果
-3. 提交、推送
-4. **停下来**，告诉导演："阶段 2 完成，请确认 Miles 设定包。"
-
----
-
-## 5. 阶段 3：风格样张（关卡 1）
-
-每个段落一张，把色彩剧本变成画面。这 5 张定下来，就等于定下了整部片子的样子。
-
-- 模型：sunburst　尺寸：`1792x1008`　每张生成 3 个版本：`_v1..v3`
-- 参考图：Miles 设定包的 `miles_01`、`miles_05`、`miles_06`，加上对应的场景母版
-- 输出：`assets/style_frames/`
-- 每张的提示词 = `{KEEP_MILES}` + 下表的画面和光线 + `{STYLE}`
-
-| 文件名 | 画面和光线 |
-| --- | --- |
-| `SF1_rain_night` | `Medium shot: Miles rides an electric scooter through the jammed elevated highway in the rain, looking down at a phone on the handlebar. Night, rain, deep indigo ambient light, cyan neon rim light from the left, cyan HUD glow on his face.` |
-| `SF2_jam` | `Wide shot: Miles stops at the edge of the jammed highway, the black convoy and police drones ahead, he looks down at his prosthetic leg. Night, rain, deep indigo ambient light, red and blue police lights mixing with cyan neon.` |
-| `SF3_overclock` | `Low-angle full shot: Miles crouches on a car roof after landing, rain drops frozen in the air around him, a trail of floating cyan HUD numbers behind him. Night, rain, deep indigo ambient light, cyan neon rim light from the left.` |
-| `SF4_lobby` | `Wide fixed shot: Miles kneels exhausted in the spotless white delivery lobby while a small white service robot takes a parcel from him. Pale sterile white-cyan light, low saturation.` |
-| `SF5_rooftop` | `Medium close-up: Miles sits at the rooftop edge, a single small lighter flame lit in his trembling hand, the city glowing far below. Dark indigo night, the warm flame lighting his face from below is the only warm color in the frame.` |
-
-`SF3_overclock` 生成时用普通夜景光，因为成片里这一段是**整屏红色单色**，在后期统一加。为了让导演提前看到效果，再额外为每个 SF3 版本做一张预览：用 Python 把图转成亮度图，再映射到这组颜色上（从暗到亮）：
-
-`#140E1E` → `#B02324` → `#E83F34` → `#EDF5ED`
-
-青色的 HUD 数字保持原色不映射（可以把高饱和的青色像素蒙版出来，跳过映射）。预览存成 `SF3_overclock_v1_redpreview.png`，依此类推。
-
 ### 阶段 3 结束
 
-1. 对比图：`assets/_review/stage3_style_frames.jpg`
-2. 更新 REVIEW.md
-3. 提交、推送
-4. **停下来**，告诉导演："阶段 3 完成，请确认风格样张。确认后，这些素材就可以上传到 Higgsfield 了。"
+对比图 `assets/_review/stage3_locations.jpg`、`assets/_review/stage3_props.jpg`，更新 REVIEW.md，提交、推送，**停下来**等导演挑选。
 
 ---
 
-## 6. 这份文档之后的事（不属于 Codex 的任务）
+## 7. 阶段 4：风格样张（关卡 1）
 
-导演确认风格样张之后：
-1. 把 Miles 设定包上传到 Higgsfield，创建 Element `Miles`
-2. 用 Wan 3.0 做试镜（关卡 2）
-3. 开始生成镜头的关键帧和视频，见 [Wan 3.0 七天计划](wan3-7day-plan.md)
+每个段落一张，把色彩剧本变成画面。
 
-镜头关键帧会另外写一份执行文档。
+- 尺寸：`1792x1008`，每张 3 个版本：`_v1..v3`
+- 参考图（4 张）：`miles_sheet_master.png`、`miles_portrait_master.png`、对应场景的 master、下表的光影参考
+- 输出：`assets/style_frames/`
+- 提示词 = `{KEEP_MILES}` + `{USE_STYLE_REFS}` + 下表的画面 + `The whole figure takes on the color of the ambient light.` + `{STYLE}`
+
+| 文件名 | 光影参考 | 画面 |
+| --- | --- | --- |
+| `SF1_rain_night` | `light_teal_pink` | `Medium shot: Miles rides an electric scooter through the jammed elevated highway in the rain, looking down at a phone on the handlebar. Night, rain, deep indigo ambient light, cyan neon rim light from the left, cyan HUD glow on his face.` |
+| `SF2_jam` | `light_rimsilhouette` | `Wide shot: Miles stops at the edge of the jammed highway, the black convoy and police drones ahead, he looks down at his prosthetic leg. Night, rain, deep indigo ambient light, red and blue police lights mixing with cyan neon.` |
+| `SF3_overclock` | `char_dorio_action` | `Low-angle full shot: Miles crouches on a car roof after landing, rain drops frozen in the air around him, a trail of floating cyan HUD numbers behind him. Night, rain, deep indigo ambient light, cyan neon rim light from the left.` |
+| `SF4_lobby` | `char_gloria_profile` | `Wide fixed shot: Miles kneels exhausted in the spotless white delivery lobby while a small white service robot takes a parcel from him. Pale sterile white-cyan light, low saturation.` |
+| `SF5_rooftop` | `light_rimsilhouette` | `Medium close-up: Miles sits at the rooftop edge, a single small lighter flame lit in his trembling hand, the city glowing far below. Dark indigo night; the warm flame lighting his face from below is the only warm color in the frame.` |
+
+**SF3 的红色预览**：成片里这一段是整屏红色单色，在后期统一加。为了让导演提前看到效果，给每个 SF3 版本额外做一张预览：用 Python 把图转成亮度图，再从暗到亮映射到 `#140E1E` → `#B02324` → `#E83F34` → `#EDF5ED`，高饱和的青色像素（HUD 数字）不映射。存成 `SF3_overclock_v1_redpreview.png`，其他版本依此类推。可以和原作的 `refs/style/mono_red_fight.jpg` 对比一下。
+
+### 阶段 4 结束
+
+对比图 `assets/_review/stage4_style_frames.jpg`，旁边放上对应的原作光影参考图，方便导演对比。更新 REVIEW.md，提交、推送，然后**停下来**："阶段 4 完成，请确认风格样张。确认后，就可以把素材上传到 Higgsfield 了。"
 
 ---
 
-## 7. 记录文件的格式
+## 8. 记录文件的格式
 
 ### assets/manifest.csv
 
-每生成一张图加一行：
-
 ```
 task,file,model,size,quality,refs,attempt,self_check,notes
-T1.1,assets/characters/miles/candidates/miles_c01.png,gpt-image-2.5-flare,1024x1536,high,,1,pass,
-T2.1,assets/characters/miles/pack/miles_03_side_full.png,gpt-image-2.5-sunburst,1024x1536,high,miles_master.png,2,pass,第 1 次义肢画到了右腿
+T0.1,assets/characters/miles/portrait/miles_portrait_c01.png,gpt-image-2.5-sunburst,1024x1024,high,char_david_smile;char_lucy_closeup;char_gloria_profile;char_david_teal,1,pass,
 ```
 
-- `self_check`：`pass`、`fail` 或 `unsure`
-- `notes`：不合格的原因，或者需要导演注意的地方
+`self_check` 填 `pass`、`fail` 或 `unsure`；`notes` 写不合格的原因或需要导演注意的地方。
+
+### assets/selections.md（导演填写）
+
+```
+miles_portrait: c03
+miles_full: c02
+miles_sheet: c01
+miles_expr_grid: c02
+mia_portrait: c04
+...
+```
 
 ### assets/REVIEW.md
 
-```
-# 素材审查记录
+每个阶段一节：每张候选的客观观察，画风像在哪里、不像在哪里，以及需要导演决定的问题。不替导演做选择。
 
-## 阶段 1（日期）
-### Miles 候选
-- c01：……
-- c04：耳钉画到了左耳，已重新生成
-### 需要导演决定的问题
-- ……
-```
+---
 
-只写客观观察和问题，不替导演做选择。
+## 9. 之后的事（不属于 Codex 的任务）
+
+导演确认风格样张之后：
+1. **只把我们自己生成的素材上传到 Higgsfield**。`refs/style/` 里的原作截图不上传：Higgsfield 的版权过滤会拦截，而且没有必要，因为画风已经体现在我们自己的素材里了。
+2. 在 Higgsfield 上创建 Element `Miles`，用 Wan 3.0 做试镜（关卡 2）
+3. 生成镜头的关键帧和视频，见 [Wan 3.0 七天计划](wan3-7day-plan.md)

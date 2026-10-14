@@ -3,6 +3,9 @@
 > 《超频 OVERCLOCK》的人物设定。外形规则一律以这份档案为准，提示词也从这里来。
 > 相关：[世界观、场景和道具](world.md)　[导演方案](../film-overclock.md)　[Higgsfield 制作流程](../higgsfield-workflow.md)
 
+> **提示词以 [Codex 执行文档](../codex-execution.md) 为准。** 这里的提示词是早期版本，画风描述比较简略，也没有用风格参考图。
+
+
 这份档案有两个用途：
 
 1. **给导演和演员**：人物从哪里来、想要什么、怎么动。你自己表演 Motion Control 的动作时，按"动作习惯"那一节来演。

@@ -94,10 +94,7 @@ a thin transparent cyan AR visor across his eyes.
 
 **画风描述块**
 ```
-2D anime TV series style, flat cel shading with a single hard-edged shadow tone,
-thin clean dark lineart of even weight, bold saturated colors, shadows tinted deep indigo
-and violet (never grey), hard-edged cyan rim light, high contrast, angular expressive
-character design.
+2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.
 ```
 
 **视频结尾块**（Wan 默认偏写实，要明确压住）
