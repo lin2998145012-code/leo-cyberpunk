@@ -17,11 +17,12 @@
 3. 表情用**九宫格**一次生成 9 个。
 4. 场景也用**同一张图里的多机位**来保证一致。
 
-全部工作分 5 个阶段，**每个阶段结束都要停下来等导演确认**，不要跳过确认自己往下做。
+全部工作分 6 个阶段，**每个阶段结束都要停下来等导演确认**，不要跳过确认自己往下做。
 
 | 阶段 | 内容 | 结束时 |
 | --- | --- | --- |
 | 0 | 画风测试：Miles 定妆照和全身候选 | **停**：导演选定 Miles 的脸和全身，同时确认画风 |
+| 0.5 | 修整导演选定的定妆照和全身图，作为母版 | **停**：导演确认母版 |
 | 1 | Miles 设定总图 → 单独视图 → 表情九宫格 → 一致性检查 | **停**：导演确认 Miles |
 | 2 | Mia 和配角 | **停**：导演挑选 |
 | 3 | 场景和道具 | **停**：导演挑选 |
@@ -83,7 +84,7 @@
 1. 有没有文字
 2. **画风**：和风格参考图比，线条是不是一样细、一样干净？眼睛是不是窄而上挑、上睫毛线很粗？是不是只有一层硬边阴影、阴影带靛蓝或紫色？有没有出现原作里没有的柔和渐变、光泽感或 3D 感？
 3. **有没有抄原作的角色**：脸、发型、服装是不是太像风格参考图里的某个角色？对照第 2.7 节的"和原作主角的区别"逐条检查，像的话重新生成。
-4. 角色图：5 个锚点对不对，**左右有没有反**（见第 2.7 节）
+4. 角色图：5 个锚点齐不齐（见第 2.7 节）。导演已决定左右不作为淘汰标准；从阶段 0.5 起，左右以修整后的母版为准，同一套设定图里要保持同一侧
 
 不合格就重新生成，**每个任务最多重试 3 次**。3 次都不合格，保留最好的一张，在 REVIEW.md 里标出来。
 
@@ -151,7 +152,7 @@ Mia: a 7-year-old girl, round face, big eyes with pale teal-grey irises, short b
 | 雨披 | 深青色兜帽雨披，长到大腿，下摆青色反光带，**背后**白色大 Z | 画成夹克、画了大翻领、长度太短、Z 在胸前 |
 | 义肢 | **左小腿**枪灰色，5 颗灯，工作服**左**裤腿在膝盖处剪掉 | 画到右腿、两条腿都正常 |
 
-角色面向镜头时，他的左边在画面的**右侧**。以角色自己的左右为准。另外，Miles 身上不能出现暖金色。
+角色面向镜头时，他的左边在画面的**右侧**。左右的规则见 3.5 节：不作为淘汰标准，但从阶段 0.5 起以母版为准。另外，Miles 身上不能出现暖金色。
 
 **和原作主角的区别**：Miles 是原创角色，只有画风和原作一样。生成的图里只要出现剃发、大翻领夹克、黄色衣服、金链子、背心中的任何一样，都算不合格。
 
@@ -200,9 +201,88 @@ Full-body character design of a new original character, front view, neutral stan
 
 ---
 
+## 3.5 阶段 0.5：修整母版
+
+### 导演的选择（2026-10-14）
+
+| 项目 | 选中 |
+| --- | --- |
+| 定妆照 | `assets/characters/miles/portrait/miles_portrait_c04.png` |
+| 全身图 | `assets/characters/miles/fullbody/miles_full_c05.png` |
+
+开始前，把这两项写进 `assets/selections.md`：
+```
+miles_portrait: c04
+miles_full: c05
+```
+
+**左右规则的更新**：导演决定，左右不再作为淘汰标准（图可以镜像使用）。但是**从这一阶段开始，所有图都以修整后的两张母版为准**：母版上挑染、耳机、义肢在哪一侧，后面的设定总图、单独视图和表情九宫格就都在同一侧。
+
+### 为什么要修
+
+c04 和 c05 的造型已经选定，但有几处会妨碍后面的工作：
+
+- 整张脸被染成了紫色，这是从风格参考图的紫色灯光里学来的。设定图要用正常肤色，否则角色放进红光、白光的场景会很别扭
+- 青色边缘光太强，背景有渐变。设定图需要平光
+- 义肢的灯数不对（应该是 5 颗）；c05 的左裤腿是卷起来的，应该是在膝盖处剪断
+- AR 目镜太厚
+
+**修整的原则**：这是编辑，不是重画。脸、发型、表情、姿势、服装和画法都必须保持不变，只改下面列出的地方。
+
+### T0.5.1 修整定妆照（3 个版本）
+
+- 模型：sunburst（编辑模式）
+- 输入图：`miles_portrait_c04.png`
+- 风格参考（看平光下的肤色）：`refs/style/char_gloria_profile.jpg`
+- 输出：`assets/characters/miles/master_fix/portrait_fix_v1..v3.png`
+- 提示词：
+```
+Edit the input image. Keep the character, face shape, eyes, hair, ponytail, expression, pose, earpiece, outfit and drawing style exactly the same. Change only these things:
+1. Skin: a warm light skin tone under flat neutral light, base color #D5906D. Keep exactly one hard-edged shadow tone, with the shadows tinted violet-indigo. Remove the overall purple cast from the face and neck.
+2. Remove the strong cyan rim light along the face, hair and jacket. A very thin rim line is acceptable.
+3. Background: a perfectly flat light grey, no gradient, no vignette.
+4. Make the AR visor thinner: a slim transparent cyan band pushed up onto his hair.
+No text.
+```
+
+### T0.5.2 修整全身图（3 个版本）
+
+- 模型：sunburst（编辑模式）
+- 输入图：`miles_full_c05.png`；第二张参考图：T0.5.1 里你自检最好的那一版（只用来对齐脸和发型）
+- 输出：`assets/characters/miles/master_fix/full_fix_v1..v3.png`
+- 提示词：
+```
+Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:
+1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.
+2. Remove the strong cyan rim light. A very thin rim line is acceptable.
+3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.
+4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.
+5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.
+6. Make the AR visor thinner.
+No text.
+```
+
+### 自检（在 1.6 的基础上增加）
+
+1. **和原图比，除了列出的修改，其他都没变**：脸、发型、表情、姿势、服装。变了的不合格
+2. **肤色**：脸看起来是暖色的正常肤色，阴影是紫色的，但亮部不是紫色
+3. 背景是纯平的浅灰
+4. 全身图：义肢正好 5 颗灯，第 3 颗是暗的；裤腿是剪断的，不是卷起来的
+5. 全身图的脸和发型，和修整后的定妆照对得上
+
+每个任务最多重试 3 次。
+
+### 阶段 0.5 结束
+
+1. 对比图 `assets/_review/stage05_masters.jpg`：左边是原图 c04、c05，右边是修整后的各个版本，方便导演对比修了什么
+2. 更新 REVIEW.md：写清楚每个版本改对了哪些、还有哪些没改对
+3. 提交、推送，然后**停下来**："阶段 0.5 完成，请选定修整后的定妆照和全身图，写进 `assets/selections.md`（`miles_portrait_fix: v2`、`miles_full_fix: v1` 这样的格式）。"
+
+---
+
 ## 4. 阶段 1：Miles 设定总图
 
-**开始前**：读 `assets/selections.md`，把选中的定妆照复制成 `assets/characters/miles/miles_portrait_master.png`，选中的全身图复制成 `assets/characters/miles/miles_full_master.png`。**选定之后不再重新生成这两张。**
+**开始前**：读 `assets/selections.md`，把阶段 0.5 选中的**修整版**定妆照复制成 `assets/characters/miles/miles_portrait_master.png`，修整版全身图复制成 `assets/characters/miles/miles_full_master.png`。**选定之后不再重新生成这两张。**
 
 ### T1.1 人物设定总图（3 张候选）
 
