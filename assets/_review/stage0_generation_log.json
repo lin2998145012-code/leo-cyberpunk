@@ -1,0 +1,517 @@
+[
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 1,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-2379eece-f853-4749-9599-d8922fd1604c.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c01_a1.png",
+    "size": "1254x1254",
+    "self_check": "unsure",
+    "notes": "v2；左挑染、右耳白色短麦耳机、后颈小揪、倦眼黑眼圈、抬起的目镜均可见；无文字或禁用造型；窄眼和紫色硬边阴影接近参考，但灰底略有明暗变化，胸像无法检查雨披长度、背标与义肢。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图; 候选副本 assets/characters/miles/portrait/miles_portrait_c01.png",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "21a48b3810768317b45d9432587734886944de0c8ddf4a8477e9ba1e6007b391"
+  },
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 2,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-868119b2-529d-425d-a686-29b7f17221e4.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c02_a1.png",
+    "size": "1254x1254",
+    "self_check": "unsure",
+    "notes": "v2；无文字及禁用造型；左挑染、右白耳机、后颈小揪、倦眼与抬起目镜正确；面部硬边分割和粗上睫毛接近参考，整体紫影较重，灰底略渐变；胸像下半身与背标不可见。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图; 候选副本 assets/characters/miles/portrait/miles_portrait_c02.png",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "b38f306c86cedddd3058b0f947132d1c106dd55dff43b47a1b588249750e1c58"
+  },
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 3,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-9c89e8e8-1e09-4768-9e80-ac37823fbcd5.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c03_a1.png",
+    "size": "1254x1254",
+    "self_check": "fail",
+    "notes": "v2；耳机在角色左耳，左右错误；其余左挑染、倦眼、抬起目镜与后颈小揪可见；无文字；窄眼紫色硬边阴影接近参考，灰底略有明暗变化。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图；此后导演授权忽略左右，保留原失败记录作为当时检查历史，不再因左右重试。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "7c3c2fa423d9ca200c340e7969b3b1ec3b5708fa40ef18f906573d0d2cd9f13e"
+  },
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 3,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-685e556a-8526-47ad-8341-71b8b4bbca99.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c03_a2.png",
+    "size": "1254x1254",
+    "self_check": "unsure",
+    "notes": "v2；右耳耳机已纠正；左挑染、黑眼圈、后颈小揪和抬起目镜正确；无文字与禁用造型；细线和大块紫影接近参考，面部明暗和灰底稍有渐变，目镜偏厚；胸像不能检查下半身。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图; 候选副本 assets/characters/miles/portrait/miles_portrait_c03.png",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "a72966af5c221ea048320bfa08e58a7ddedc80a4a289e688d04f5a7944de1d7a"
+  },
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 4,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-c836d8da-8193-4598-9344-405b86e5a405.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c04_a1.png",
+    "size": "1254x1254",
+    "self_check": "unsure",
+    "notes": "v2；无文字、剃发或大翻领；白色短麦耳机、长发小揪、半睁眼与黑眼圈可见；紫影分块接近参考，灰底仍略渐变，目镜偏厚；胸像不能检查下半身。导演已允许左右差异，不据此淘汰。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图; 候选副本 assets/characters/miles/portrait/miles_portrait_c04.png",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "160796da1be5a24273acb3c87481b3c2918d3771dad22603a857b8afa50199dd"
+  },
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 5,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-b7df0e49-9b5e-47be-9583-cec0b72f8d19.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c05_a1.png",
+    "size": "1254x1254",
+    "self_check": "fail",
+    "notes": "v2；无文字与剃发、大翻领；但眼下出现偏红三角色块，与风格参考人物的红色眼妆相似，偏离深色黑眼圈，重试；其余长发、小揪、白耳机、抬起目镜可见。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "14b4ee47289c5e4896212f870d11f9d634bf91fae37fb792c06631fb8bc1e2ca"
+  },
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 5,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-78f0b0f5-cb7d-4d0e-8901-8f287a5a164b.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c05_a2.png",
+    "size": "1254x1254",
+    "self_check": "fail",
+    "notes": "v2；红色眼下色块已消失，倦眼长发小揪正确；耳机变成垂直细杆耳塞，未见要求的短麦克风杆，重试；无文字；硬边紫影接近参考，灰底略渐变。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "041fd8e48e4bf618259eab5ba0f32705ca3ad3a58a94078963d7dc658c6bf7d8"
+  },
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 5,
+    "attempt": 3,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-b79faf79-bb7f-45e3-ae55-f6541e0fd8c5.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c05_a3.png",
+    "size": "1254x1254",
+    "self_check": "unsure",
+    "notes": "v2；眼下恢复深紫黑眼圈，白色短麦耳机与后颈小揪可见；无文字或禁用造型；耳机位于左耳，依导演最新要求不淘汰；紫影和细线接近参考，脸部大面积偏紫、灰底略渐变；下半身不可见。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图; 候选副本 assets/characters/miles/portrait/miles_portrait_c05.png",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "31a4f70ef6cf95df09b17508bcb8313abb76ea3c17eb4137d17bb773611c0d81"
+  },
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 6,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-f4668ace-1bce-4750-a32e-cb5ec8afee8c.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c06_a1.png",
+    "size": "1254x1254",
+    "self_check": "unsure",
+    "notes": "v2；无文字与禁用造型；白色短麦耳机位于左耳，按导演要求保留；长发小揪、挑染、倦眼、抬起目镜完整；细线和紫影接近参考，但脸部光影比平光更戏剧化、灰底稍渐变；下半身不可见。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图; 候选副本 assets/characters/miles/portrait/miles_portrait_c06.png",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "184a7920a946211b6d5a231db20900119423c3396b4feaba8f0a890ef4414afe"
+  },
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 7,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-1de5f6a3-b0a5-4115-b6cc-b412c6089b44.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c07_a1.png",
+    "size": "1254x1254",
+    "self_check": "unsure",
+    "notes": "v2；无文字和禁用造型；白耳机、长发小揪与倦眼可见；轮廓细线和紫色硬边影接近参考；右眼下额外有一处小深色痕迹，青色边缘光较强，灰底稍渐变；胸像下半身不可见。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图; 候选副本 assets/characters/miles/portrait/miles_portrait_c07.png",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "055e8f1e76cc595f1015edb7ac1a18ae1c2e5a92c41989adaec648f24eefcfc8"
+  },
+  {
+    "version": 2,
+    "kind": "portrait",
+    "candidate": 8,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-6b1de871-64bd-4002-819b-441866762a15.png",
+    "file": "assets/_review/stage0_attempts/miles_portrait_c08_a1.png",
+    "size": "1254x1254",
+    "self_check": "unsure",
+    "notes": "v2；无文字与禁用造型；倦眼、深紫黑眼圈、小揪、白色短麦耳机和抬起目镜可见；脸较窄长，硬边紫影接近参考，目镜偏厚、灰底轻微渐变；胸像下半身不可见。; 实际尺寸 1254x1254，目标 1024x1024；按1.7保留原图; 候选副本 assets/characters/miles/portrait/miles_portrait_c08.png",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nCharacter portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a square image.",
+    "refs": [
+      "refs/style/char_lucy_closeup.jpg",
+      "refs/style/char_gloria_profile.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/light_teal_pink.jpg"
+    ],
+    "sha256": "abac7811d904b0c5f33c31977741db5f32460692def89efe4de589d32b136563"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 1,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-2da0c2e1-d4bb-4e78-9a21-6d2134764800.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c01_a1.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；全身完整，长雨披、斜挎包、卷袖工作服、单小腿义肢可见；义肢仅4颗清晰指示灯，白Z出现在包正面而非背后，站姿稍偏三分之四；无其他文字；线条与紫影接近参考但有轻微灰底渐变。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "a9d875bbcd342170095885aec604dc1c17ccf845e0eadaa831f4d952b045ed79"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 1,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-f55e176a-a1a5-4b83-b573-a61b939f6c22.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c01_a2.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；无文字、剃发或大翻领；长雨披与包完整，但耳机似出现双侧麦杆，义肢有4颗较大亮灯及额外小亮点，无法确认5灯；身体稍侧转，重试；紫色硬边阴影接近参考。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "53f288da75f2f15ef3142c0e01e766eb6a8b98d12cabf4f2dae2d9b8ffa89d51"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 1,
+    "attempt": 3,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-3a95804f-b6a5-4018-bc37-668ae55f0ebc.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c01_a3.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；长雨披、斜挎包、单侧小腿义肢、短麦耳机完整；仅4颗清晰灯，额外出现黑手套；眼神较锐、刘海偏短；无文字与禁用造型，深紫硬边影接近参考。已连续3次未通过，等待导演决定灯数容差。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "bdb6263817549a2cfba5302f7511a97a16d5aa1073fc8651e3fdafc37360fa25"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 2,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-305cd78f-eaf4-44c1-859d-8f330ed8a2c8.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c02_a1.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；长雨披、白色短麦耳机、倦眼和单侧义肢可见；义肢仅4颗清晰灯，重试；无文字及禁用造型，细线紫色硬边阴影接近参考，灰底略渐变。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "feb7f1db8ca27d3bec7ef12ae81bc1e2d0bb66b776ce3c836035a36877e08afd"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 2,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-528f684d-21a9-4aad-8a59-63fd5c9bac0a.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c02_a2.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；仅3颗清晰义肢灯，重试；倦眼、白色短麦耳机、长雨披与斜挎包完整；无文字及禁用造型，细线紫影接近参考，目镜较厚、灰底稍渐变。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "dc9a5313046d62f61ee0cedc5c838533a916472cb7ad0017ff22853bf7cb2fdd"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 2,
+    "attempt": 3,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-7b5193b4-5f29-4f9a-85f8-73f6f4cb1724.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c02_a3.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；仅4颗清晰灯；雨披和包出现额外白色几何标记，刘海偏短；细线紫影接近参考，无可辨文字。三次未通过，按1.6保留a1作为c02供审查，不放宽灯数设计。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "8803d5a64dfa20738b303ece12935885f3192179fe68ebfcb17bfb441564dd6c"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 3,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-a3e8e7ae-14c9-49da-9a73-943ccf08215c.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c03_a1.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；仅4颗清晰灯，重试；长雨披、卷袖连体服、白短麦耳机、倦眼和小揪可见；无文字及禁用造型，紫影硬边、线条细，灰底稍渐变。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "6209c0ddf55ef7c9450c56a66c95b20b4afa1a4f656db46aabafe0a3cfa5386c"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 3,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-17af05e5-9177-4349-8ad5-de40c0ae6b75.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c03_a2.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；仍仅4颗清晰灯，裤腿变卷起而非裁短；雨披、斜挎包、倦眼和白短麦耳机可见；无文字或禁用造型，硬边紫影接近参考。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "3325c9a92d42530006b9aaad1b1df6f33e11d04f0efbb335621fa80072ffcaa9"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 3,
+    "attempt": 3,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-c13c6cf1-e837-4e2b-8d08-3c14fb7fc9dc.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c03_a3.png",
+    "size": "1024x1536",
+    "self_check": "unsure",
+    "notes": "v2；可辨5颗义肢灯、裂纹与刮痕；雨披青色下摆、斜挎包、白色短麦耳机、倦眼小揪齐全。裤腿呈卷边，头发偏短、目镜偏厚；无文字及禁用造型，细线硬边紫影接近参考，灰底略渐变；背后Z不可见。; 候选副本 assets/characters/miles/fullbody/miles_full_c03.png",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "1ccc8d47f143fcbc2a91a17d10322195a5cabed69472307a91ac33b5c3b78cd3"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 4,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-0d0a34c9-fc71-426b-bd43-31b6fe593c8c.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c04_a1.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；约4颗灯且下方亮点粘连，另有多余悬垂麦杆，重试；雨披、斜挎包、倦眼与短裤腿完整；无文字及禁用造型，硬边紫影接近参考。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "935f9321b9e13e9c1140653e5efe097640734862f167870cd9eaee151f510fe3"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 4,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-499d0796-97c3-4349-890f-5da214b25ddd.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c04_a2.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；仅4颗清晰灯，耳机多出悬垂零件；雨披、斜挎包和裁短裤腿可见，刘海偏短。无文字，紫影硬边接近参考，灰底稍渐变；重试。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "4bfe211efaeceed6ce363f6ff36d6f5221e57b5557c505600e5fbfad50e2e239"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 4,
+    "attempt": 3,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-0b2fe9b0-5530-4c4f-8318-cbd77d27b91a.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c04_a3.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；仍仅4颗清晰灯、裤腿为卷边；白色短麦耳机恢复正常，倦眼黑眼圈、长雨披、包和义肢齐全；无文字及禁用造型，细线紫影接近参考，灰底稍渐变。三次后按1.6保留a3为c04，灯数待导演判断。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "79a621a788c4baf04a50c05a29a5e608b1dec180421923099288cebed10fcd89"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 5,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-526f536e-7dc7-4d56-97e8-24622b967f1a.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c05_a1.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；仅4颗清晰灯，裤腿呈卷边，重试；长雨披、斜挎包、白短麦耳机、倦眼和小揪可见；无文字及禁用造型，阴影硬边偏紫，灰底稍渐变。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "bdbe915433b26efa158f594da303c70a7bcc008f2617b1d0a0ad6c8d9ab272b1"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 5,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-02a8b2cd-849e-44bd-bbe8-9e49df50d068.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c05_a2.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；仅4颗亮灯，辉光较明显；长雨披、斜挎包、白短麦耳机和裁短裤腿可见，倦眼神态接近设定；无文字及禁用造型，细线硬边紫影接近参考，灰底略渐变；重试。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "7810fe9c7602f1f363d9f8b394a29d89dff30b9deeb036dd932328aff9767e39"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 5,
+    "attempt": 3,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-4163c684-505d-4922-a1f6-8da1afee61de.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c05_a3.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；仅4颗清晰灯；疲惫神态、黑眼圈、小揪、白色耳机、裁短裤腿与义肢裂纹较清楚，包斜挎位置较高；无文字及禁用造型，细线紫色硬边影接近参考，灰底稍渐变。三次后按1.6保留a3为c05供审查。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "499696275ebf369f12ec5c21d4ddc4d7d31d6ce163886f640dcd0043da0e99c5"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 6,
+    "attempt": 1,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-18374994-7795-48b8-86bc-db938c173024.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c06_a1.png",
+    "size": "1024x1536",
+    "self_check": "fail",
+    "notes": "v2；包正面出现Z文字，且仅4颗灯、额外手套与鞋底青色，重试；雨披、倦眼、白短麦耳机可见；细线硬边紫影接近参考。",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "c0b276c888460ca4882aa7e18129b9749dfcfadc4c8a65237823aa7a6409a014"
+  },
+  {
+    "version": 2,
+    "kind": "fullbody",
+    "candidate": 6,
+    "attempt": 2,
+    "source": "/Users/apple/.codex/generated_images/01a13a42-a499-7d91-b1a4-7220a846c472/exec-b7230e90-a9f8-4bbb-ae62-e5b1162f3430.png",
+    "file": "assets/_review/stage0_attempts/miles_full_c06_a2.png",
+    "size": "1024x1536",
+    "self_check": "unsure",
+    "notes": "v2；可辨5颗义肢灯及刮痕，长雨披青色下摆、包、白短麦耳机、倦眼与小揪完整；额外黑色露指手套、目镜较厚，裂纹较弱；无文字及禁用造型，细线硬边紫影接近参考，灰底略渐变；背后Z不可见。; 候选副本 assets/characters/miles/fullbody/miles_full_c06.png",
+    "prompt": "The style reference images show only the drawing style to copy: line quality, face and eye construction, body proportions, flat cel shading with one hard-edged shadow tone, and color handling. Draw exactly in that style. Do not copy any character, face, hairstyle, outfit, logo, watermark, subtitle or text from the style references, and ignore all text and logos in them.\nThis is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.\nFull-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. Plain light grey background, flat even lighting, no text, no labels, no numbers, no arrows, no watermark.\nMiles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length black hair tied into a short stubby ponytail at the nape, longer bangs with a single cyan streak in his left bangs, no shaved sides; a cheap white courier earpiece with a short microphone boom on his right ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.\n2D anime TV series style with sharp, angular character design: slim, long-limbed proportions about 7.5 heads tall with a small head; angular jaw and cheekbones; narrow almond-shaped eyes with a heavy dark upper lash line that flicks outward, small irises with a single small highlight; a simple angular nose and a mouth drawn as one thin line. Thin, clean, even-weight dark lineart with very few interior lines. Flat colors with exactly one hard-edged shadow tone, large graphic shadow shapes cast across the face and body, shadows strongly hue-shifted toward indigo and violet (never grey). Hair drawn as solid sharp clumps with one flat highlight band. Clothes as big flat color blocks with bold graphic panels and stripes and few folds. Hard-edged colored rim light, saturated neon colors, no soft gradients on skin, no glossy or 3D rendering.\nOutput a portrait image.",
+    "refs": [
+      "refs/style/char_lucy_day.jpg",
+      "refs/style/char_dorio_action.jpg",
+      "refs/style/bg_station.jpg"
+    ],
+    "sha256": "211c17b3458f019fd514a1156d731224203b9d43043c90273b8ac3642d04da85"
+  }
+]

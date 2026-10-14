@@ -1,0 +1,100 @@
+[
+  {
+    "file": "assets/characters/miles/portrait/miles_portrait_c01.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_portrait_c01_a1.png",
+    "attempt": 1,
+    "self_check": "unsure",
+    "sha256": "21a48b3810768317b45d9432587734886944de0c8ddf4a8477e9ba1e6007b391"
+  },
+  {
+    "file": "assets/characters/miles/portrait/miles_portrait_c02.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_portrait_c02_a1.png",
+    "attempt": 1,
+    "self_check": "unsure",
+    "sha256": "b38f306c86cedddd3058b0f947132d1c106dd55dff43b47a1b588249750e1c58"
+  },
+  {
+    "file": "assets/characters/miles/portrait/miles_portrait_c03.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_portrait_c03_a2.png",
+    "attempt": 2,
+    "self_check": "unsure",
+    "sha256": "a72966af5c221ea048320bfa08e58a7ddedc80a4a289e688d04f5a7944de1d7a"
+  },
+  {
+    "file": "assets/characters/miles/portrait/miles_portrait_c04.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_portrait_c04_a1.png",
+    "attempt": 1,
+    "self_check": "unsure",
+    "sha256": "160796da1be5a24273acb3c87481b3c2918d3771dad22603a857b8afa50199dd"
+  },
+  {
+    "file": "assets/characters/miles/portrait/miles_portrait_c05.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_portrait_c05_a3.png",
+    "attempt": 3,
+    "self_check": "unsure",
+    "sha256": "31a4f70ef6cf95df09b17508bcb8313abb76ea3c17eb4137d17bb773611c0d81"
+  },
+  {
+    "file": "assets/characters/miles/portrait/miles_portrait_c06.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_portrait_c06_a1.png",
+    "attempt": 1,
+    "self_check": "unsure",
+    "sha256": "184a7920a946211b6d5a231db20900119423c3396b4feaba8f0a890ef4414afe"
+  },
+  {
+    "file": "assets/characters/miles/portrait/miles_portrait_c07.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_portrait_c07_a1.png",
+    "attempt": 1,
+    "self_check": "unsure",
+    "sha256": "055e8f1e76cc595f1015edb7ac1a18ae1c2e5a92c41989adaec648f24eefcfc8"
+  },
+  {
+    "file": "assets/characters/miles/portrait/miles_portrait_c08.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_portrait_c08_a1.png",
+    "attempt": 1,
+    "self_check": "unsure",
+    "sha256": "abac7811d904b0c5f33c31977741db5f32460692def89efe4de589d32b136563"
+  },
+  {
+    "file": "assets/characters/miles/fullbody/miles_full_c01.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_full_c01_a3.png",
+    "attempt": 3,
+    "self_check": "fail",
+    "sha256": "bdb6263817549a2cfba5302f7511a97a16d5aa1073fc8651e3fdafc37360fa25"
+  },
+  {
+    "file": "assets/characters/miles/fullbody/miles_full_c02.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_full_c02_a1.png",
+    "attempt": 1,
+    "self_check": "fail",
+    "sha256": "feb7f1db8ca27d3bec7ef12ae81bc1e2d0bb66b776ce3c836035a36877e08afd"
+  },
+  {
+    "file": "assets/characters/miles/fullbody/miles_full_c03.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_full_c03_a3.png",
+    "attempt": 3,
+    "self_check": "unsure",
+    "sha256": "1ccc8d47f143fcbc2a91a17d10322195a5cabed69472307a91ac33b5c3b78cd3"
+  },
+  {
+    "file": "assets/characters/miles/fullbody/miles_full_c04.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_full_c04_a3.png",
+    "attempt": 3,
+    "self_check": "fail",
+    "sha256": "79a621a788c4baf04a50c05a29a5e608b1dec180421923099288cebed10fcd89"
+  },
+  {
+    "file": "assets/characters/miles/fullbody/miles_full_c05.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_full_c05_a3.png",
+    "attempt": 3,
+    "self_check": "fail",
+    "sha256": "499696275ebf369f12ec5c21d4ddc4d7d31d6ce163886f640dcd0043da0e99c5"
+  },
+  {
+    "file": "assets/characters/miles/fullbody/miles_full_c06.png",
+    "attempt_file": "assets/_review/stage0_attempts/miles_full_c06_a2.png",
+    "attempt": 2,
+    "self_check": "unsure",
+    "sha256": "211c17b3458f019fd514a1156d731224203b9d43043c90273b8ac3642d04da85"
+  }
+]
