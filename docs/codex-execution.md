@@ -19,10 +19,12 @@
 
 全部工作分 6 个阶段，**每个阶段结束都要停下来等导演确认**，不要跳过确认自己往下做。
 
+> **当前状态（2026-10-15）**：故事改成了"脑仓骑手"，Miles 改成了第 3 版"备忘录"造型（见[人物档案](bible/characters.md)）。**现在只执行阶段 0（第 3 版）。** 阶段 1 以后的任务会在第 3 版定妆之后、新剧本写好之后再更新，在那之前不要执行。
+
 | 阶段 | 内容 | 结束时 |
 | --- | --- | --- |
-| 0 | 画风测试：Miles 定妆照和全身候选 | **停**：导演选定 Miles 的脸和全身，同时确认画风 |
-| 0.5 | 修整导演选定的定妆照和全身图，作为母版 | **停**：导演确认母版 |
+| 0 | 第 3 版造型：Miles 定妆照、全身和背面候选 | **停**：导演选定 Miles 的脸、全身和背面 |
+| 0.5 | 修整选定的图，作为母版（第 3 版选定后再写具体要求） | **停**：导演确认母版 |
 | 1 | Miles 设定总图 → 单独视图 → 表情九宫格 → 一致性检查 | **停**：导演确认 Miles |
 | 2 | Mia 和配角 | **停**：导演挑选 |
 | 3 | 场景和道具 | **停**：导演挑选 |
@@ -64,7 +66,7 @@
 
 ### 1.4 内容规则
 
-- **生成的图里不能有任何文字**：标签、编号、视图名称、水印、签名都不行。带字的重新生成。
+- **生成的图里不能有任何文字**：标签、编号、视图名称、水印、签名都不行。带字的重新生成。唯一例外是 Miles 外套和手臂上看不清的马克笔笔迹（见 2.7）。
 - **提示词里不能出现**任何现成作品名、工作室名、艺术家名或别的作品里的角色名。
 - **不要改动设计。** 外形、颜色、左右位置都是导演定的。连续 3 次都生成不对，就记进 REVIEW.md 问导演，不要自己改提示词里的设计内容。
 - **提示词整段复制，不要改写。** 第 2 节的固定块每次原样使用。
@@ -124,17 +126,22 @@ Plain light grey background, flat even lighting, no text, no labels, no numbers,
 
 ### {MILES}
 ```
-Miles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length all-black hair tied into a short stubby ponytail at the nape, long uneven bangs, no dyed streaks, no shaved sides; a cheap white courier earpiece with a short microphone boom on his left ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.
+Miles: a 19-year-old wiry young man, about 170 cm; narrow face, sharp chin; lively narrow eyes with pale teal-grey irises and faint shadows under them, a mischievous crooked half-smile; messy black hair tied up into a small loose bun on top of his head, loose strands falling around his face, no shaved sides; a square of white medical tape on the back of his head covering a hidden data port; an oversized off-white work jacket reaching mid-thigh with the sleeves rolled up to the elbows, the whole jacket covered in handwritten black marker scribbles (illegible notes, numbers, arrows, small doodles and crossed-out lines, a few lines crossed out in red marker) and three pale cyan sticky notes stuck on it; both forearms also covered in black marker handwriting; a black marker tucked behind his ear; a fitted black high-neck shirt underneath, black cargo pants, chunky white sneakers with marker doodles.
 ```
 
 ### {KEEP_MILES}
 ```
-The character is Miles from our character references. Keep his face, tired eyes, hair and ponytail, earpiece, rain poncho, jumpsuit, delivery bag, prosthetic leg and colors exactly the same. The earpiece is on his left ear and the prosthetic on his left leg, the same as in the master images. In a front view, his left side appears on the right side of the image.
+The character is Miles from our character references. Keep his face, eyes, hair bun, the off-white jacket with its marker scribbles and sticky notes, the handwriting on his forearms, the medical tape on the back of his head, his clothes and colors exactly the same.
 ```
 
 ### {ORIGINAL}
 ```
 This is an original character and must not resemble any character in the style references: no shaved sides or shaved patterns in the hair, no jacket with a large collar, no yellow clothing, no gold chain, no tank top.
+```
+
+### {LIGHT_NEUTRAL}
+```
+Flat neutral studio lighting: warm natural skin tone with base color #D5906D, exactly one hard-edged shadow tone tinted violet-indigo, no colored rim light, no purple or cyan cast on the skin.
 ```
 
 ### {MIA}
@@ -146,163 +153,87 @@ Mia: a 7-year-old girl, round face, big eyes with pale teal-grey irises, short b
 
 | 锚点 | 正确 | 常见错误 |
 | --- | --- | --- |
-| 发型 | 及下巴的纯黑乱发，后颈短小揪，**没有挑染**，**不剃发** | 剃了两侧、画了剃发图案、加了挑染、头发太短 |
-| 眼睛 | 半睁的倦眼，有黑眼圈 | 眼睛睁得很大很有神、没有黑眼圈 |
-| 耳机 | **左耳**白色派单耳机，短麦克风杆 | 画到右耳、画成耳钉 |
-| 雨披 | 深青色兜帽雨披，长到大腿，下摆青色反光带，**背后**白色大 Z | 画成夹克、画了大翻领、长度太短、Z 在胸前 |
-| 义肢 | **左小腿**枪灰色，5 颗灯，工作服**左**裤腿在膝盖处剪掉 | 画到右腿、两条腿都正常 |
+| 发型 | 黑发，头顶松散的小丸子，几缕碎发垂在脸边，**不剃发** | 没有丸子、剃了两侧、扎成马尾 |
+| 外套 | 宽大米白色工装外套，长到大腿中间，袖子卷到手肘，**整件写满黑色马克笔笔迹**，几行红笔划掉，3 张浅青色便利贴 | 外套是干净的、字太少、变成纯印花图案、便利贴是黄色 |
+| 手臂 | 两条小臂写满黑色马克笔笔迹 | 手臂是干净的、变成纹身 |
+| 后脑 | 后脑一块方形白色医用胶布 | 没有胶布、贴到脸上（只有背面图能检查） |
+| 表情 | 细长灵动的眼睛，只扬起左边嘴角的坏笑 | 眼神空洞、大眼萌系、没有笑意 |
 
-角色面向镜头时，他的左边在画面的**右侧**。左右的规则见 3.5 节：不作为淘汰标准，但从阶段 0.5 起以母版为准。另外，Miles 身上不能出现暖金色。
+另外：Miles 身上不能出现暖金色和黄色；没有义肢、耳机、AR 目镜和雨披（第 3 版已经去掉）。
+
+**笔迹的规则**：外套和手臂上的字是**看不清的手写笔迹和涂鸦**，不需要能读出来。这是 1.4"图里不能有文字"的唯一例外。如果模型写出了清楚可读的英文单词或句子，算不合格。
 
 **和原作主角的区别**：Miles 是原创角色，只有画风和原作一样。生成的图里只要出现剃发、大翻领夹克、黄色衣服、金链子、背心中的任何一样，都算不合格。
 
 ---
 
-## 3. 阶段 0：画风测试和 Miles 定妆
+## 3. 阶段 0：Miles 第 3 版定妆
 
-> **第 2 版。** 第 1 版的角色造型太像原作主角，已经作废（导演 2026-10-14 决定）。开始前，把第 1 版的所有文件移到 `assets/_review/stage0_v1/` 下保存，再从 c01 开始重新生成。manifest 里第 1 版的行保留，在 `notes` 里标上 `v1 作废`。
+> **第 3 版。** 第 2 版（雨披造型）已经作废（导演 2026-10-15 决定）。开始前，把第 2 版和阶段 0.5 的所有文件移到 `assets/_review/stage0_v2/` 下保存（第 1 版已经在 `stage0_v1/`），再从 c01 开始重新生成。manifest 里第 2 版的行保留，在 `notes` 里标上 `v2 作废`。`assets/selections.md` 里第 2 版的选择也标上作废。
+>
+> **风格参考换了**：第 2 版的脸被整体染成紫色，原因是参考图本身打着紫光。这一版只用**自然光下的原作画面**当风格参考，并且每个提示词都带上 `{LIGHT_NEUTRAL}`。
 
 ### T0.1 定妆照候选（8 张）
 
 - 尺寸：`1024x1024`
-- 风格参考：`refs/style/char_lucy_closeup.jpg`、`char_gloria_profile.jpg`、`char_dorio_action.jpg`、`light_teal_pink.jpg`
+- 风格参考：`refs/style/char_gloria_profile.jpg`、`char_lucy_day.jpg`、`char_dorio_action.jpg`
 - 输出：`assets/characters/miles/portrait/miles_portrait_c01.png` … `c08.png`
 - 提示词：
 ```
 {USE_STYLE_REFS}
 {ORIGINAL}
-Character portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer, neutral expression, the AR visor raised onto his hair so his eyes are fully visible. {SHEET}
+Character portrait for a model sheet: head and shoulders of a new original character, front view, looking straight at the viewer with a mischievous crooked half-smile, only the left corner of his mouth rises. The top of the jacket and the marker scribbles on it are visible. {SHEET}
+{LIGHT_NEUTRAL}
 {MILES}
 {STYLE}
 ```
 
-### T0.2 全身候选（6 张）
+### T0.2 正面全身候选（6 张）
 
 - 尺寸：`1024x1536`
-- 风格参考：`refs/style/char_lucy_day.jpg`、`char_dorio_action.jpg`、`bg_station.jpg`
+- 风格参考：`refs/style/char_lucy_day.jpg`、`char_dorio_action.jpg`、`char_gloria_profile.jpg`
 - 输出：`assets/characters/miles/fullbody/miles_full_c01.png` … `c06.png`
 - 提示词：
 ```
 {USE_STYLE_REFS}
 {ORIGINAL}
-Full-body character design of a new original character, front view, neutral standing pose, arms slightly away from the body, weight on his right leg, shoulders slightly hunched. {SHEET}
+Full-body character design of a new original character, front view, relaxed standing pose with one hand in his pocket, the jacket hanging open, a mischievous crooked half-smile. The marker scribbles on the jacket and on his forearms are clearly visible. {SHEET}
+{LIGHT_NEUTRAL}
+{MILES}
+{STYLE}
+```
+
+### T0.3 背面全身候选（4 张）
+
+后脑的胶布和外套背面只有背面图能看见，所以这一版提前做背面。
+
+- 尺寸：`1024x1536`
+- 风格参考：同 T0.2
+- 输出：`assets/characters/miles/fullbody/miles_back_c01.png` … `c04.png`
+- 提示词：
+```
+{USE_STYLE_REFS}
+{ORIGINAL}
+Full-body character design of a new original character, back view, standing, head turned slightly so the square of white medical tape on the back of his head and his hair bun are clearly visible. The back of the jacket is covered in handwritten marker scribbles. {SHEET}
+{LIGHT_NEUTRAL}
 {MILES}
 {STYLE}
 ```
 
 ### 阶段 0 结束
 
-1. 对比图：`assets/_review/stage0_portraits.jpg`、`assets/_review/stage0_fullbody.jpg`。把候选图拼成一张，左上角标上编号（这是唯一允许出现文字的地方，编号是你后期加的）。
-2. 再做一张**画风对照图** `assets/_review/stage0_style_compare.jpg`：左边放 2 张风格参考图，右边放 2 张你认为画风最接近的候选，方便导演对比。
-3. REVIEW.md：每张候选写一两句客观观察，包括画风哪里像、哪里不像，**不替导演做选择**。
-4. 提交、推送，然后**停下来**："阶段 0 完成，请在 `assets/selections.md` 里写下选中的定妆照和全身图编号。如果画风还不够像，请告诉我哪里不像。"
+1. 对比图：`assets/_review/stage0_portraits.jpg`、`assets/_review/stage0_fullbody.jpg`、`assets/_review/stage0_back.jpg`。候选图拼在一起，左上角标上编号（编号是你后期加的）。
+2. 画风对照图 `assets/_review/stage0_style_compare.jpg`：左边放 2 张风格参考图，右边放 2 张你认为画风最接近的候选。
+3. REVIEW.md：每张候选写一两句客观观察，**特别写清楚**：笔迹是不是看不清的手写（没有可读的英文）、肤色是不是正常（没有整体发紫）、像不像原作的某个角色。**不替导演做选择。**
+4. 提交、推送，然后**停下来**："阶段 0（第 3 版）完成，请选定定妆照、正面全身和背面的编号。"
 
-如果导演说画风不像，按导演的意见调整，重新做阶段 0。**画风没有确认之前，不要开始阶段 1。**
+**画风和造型没有确认之前，不要开始后面的阶段。**
 
 ---
 
 ## 3.5 阶段 0.5：修整母版
 
-### 导演的选择（2026-10-14）
-
-| 项目 | 选中 |
-| --- | --- |
-| 定妆照 | `assets/characters/miles/portrait/miles_portrait_c04.png` |
-| 全身图 | `assets/characters/miles/fullbody/miles_full_c05.png` |
-
-开始前，把这两项写进 `assets/selections.md`：
-```
-miles_portrait: c04
-miles_full: c05
-```
-
-**左右规则的更新**：导演决定，左右不再作为淘汰标准（图可以镜像使用）。但是**从这一阶段开始，所有图都以修整后的两张母版为准**：母版上挑染、耳机、义肢在哪一侧，后面的设定总图、单独视图和表情九宫格就都在同一侧。
-
-### 为什么要修
-
-c04 和 c05 的造型已经选定，但有几处会妨碍后面的工作：
-
-- 整张脸被染成了紫色，这是从风格参考图的紫色灯光里学来的。设定图要用正常肤色，否则角色放进红光、白光的场景会很别扭
-- 青色边缘光太强，背景有渐变。设定图需要平光
-- 义肢的灯数不对（应该是 5 颗）；c05 的左裤腿是卷起来的，应该是在膝盖处剪断
-- AR 目镜太厚
-
-**修整的原则**：这是编辑，不是重画。脸、发型、表情、姿势、服装和画法都必须保持不变，只改下面列出的地方。
-
-### T0.5.1 修整定妆照（3 个版本）
-
-- 模型：sunburst（编辑模式）
-- 输入图：`miles_portrait_c04.png`
-- 风格参考（看平光下的肤色）：`refs/style/char_gloria_profile.jpg`
-- 输出：`assets/characters/miles/master_fix/portrait_fix_v1..v3.png`
-- 提示词：
-```
-Edit the input image. Keep the character, face shape, eyes, hair, ponytail, expression, pose, earpiece, outfit and drawing style exactly the same. Change only these things:
-1. Skin: a warm light skin tone under flat neutral light, base color #D5906D. Keep exactly one hard-edged shadow tone, with the shadows tinted violet-indigo. Remove the overall purple cast from the face and neck.
-2. Remove the strong cyan rim light along the face, hair and jacket. A very thin rim line is acceptable.
-3. Background: a perfectly flat light grey, no gradient, no vignette.
-4. Make the AR visor thinner: a slim transparent cyan band pushed up onto his hair.
-No text.
-```
-
-### T0.5.2 修整全身图（3 个版本）
-
-- 模型：sunburst（编辑模式）
-- 输入图：`miles_full_c05.png`；第二张参考图：T0.5.1 里你自检最好的那一版（只用来对齐脸和发型）
-- 输出：`assets/characters/miles/master_fix/full_fix_v1..v3.png`
-- 提示词：
-```
-Edit the first input image. Keep the character, body proportions, hunched posture, pose, hair, rain poncho, delivery bag, jumpsuit, boots and drawing style exactly the same. The face and hair must match the second image. Change only these things:
-1. Skin: a warm light skin tone under flat neutral light, base color #D5906D, with one hard-edged violet-indigo shadow tone. Remove the overall purple cast.
-2. Remove the strong cyan rim light. A very thin rim line is acceptable.
-3. Background: a perfectly flat light grey, no gradient. Keep only a small simple shadow under the feet.
-4. Prosthetic lower leg: exactly five small round lights in one vertical row; the third light from the top is dark and broken, the other four glow white. Keep the cracks and scratches.
-5. On the leg with the prosthetic, the jumpsuit leg ends just above the knee with a frayed, roughly cut edge, not rolled up.
-6. Make the AR visor thinner.
-No text.
-```
-
-### 自检（在 1.6 的基础上增加）
-
-1. **和原图比，除了列出的修改，其他都没变**：脸、发型、表情、姿势、服装。变了的不合格
-2. **肤色**：脸看起来是暖色的正常肤色，阴影是紫色的，但亮部不是紫色
-3. 背景是纯平的浅灰
-4. 全身图：义肢正好 5 颗灯，第 3 颗是暗的；裤腿是剪断的，不是卷起来的
-5. 全身图的脸和发型，和修整后的定妆照对得上
-
-每个任务最多重试 3 次。
-
-### 阶段 0.5 结束
-
-1. 对比图 `assets/_review/stage05_masters.jpg`：左边是原图 c04、c05，右边是修整后的各个版本，方便导演对比修了什么
-2. 更新 REVIEW.md：写清楚每个版本改对了哪些、还有哪些没改对
-3. 提交、推送，然后**停下来**："阶段 0.5 完成，请选定修整后的定妆照和全身图，写进 `assets/selections.md`（`miles_portrait_fix: v2`、`miles_full_fix: v1` 这样的格式）。"
-
----
-
-### 阶段 0.5 收尾：生成母版（导演确认后执行）
-
-**导演补充决定（2026-10-15）**：取消青色挑染，头发统一纯黑。
-
-审查后的推荐（**导演在对话里确认后才执行**；如果导演选了别的版本，以导演的选择为准）：
-
-| 母版 | 来源 | 理由 |
-| --- | --- | --- |
-| 定妆照 | `portrait_fix_v1.png`，**水平翻转** | 暖肤色加紫色硬阴影最符合设定，背景最平。三个版本的脸几乎一样，v1 的阴影最接近原作 |
-| 全身图 | `full_fix_v2.png`，不翻转 | 目镜推到头上，和定妆照的状态一致；5 颗灯、第 3 颗暗、裤腿剪断都对。v1 眼前多了一副半透明镜片，v3 的目镜在眼前，和定妆照对不上 |
-
-**为什么定妆照要翻转**：原来的定妆照和全身图互为镜像，定妆照的耳机和小揪在画面左边，全身图的在画面右边。全身图的义肢在左腿，和故事一致，所以翻转定妆照，让两张对齐。翻转后耳机在角色的**左耳**，义肢在**左腿**，档案已经按这个更新。这是导演允许镜像之后的特例，其他图仍然不要镜像。
-
-**执行**：
-1. 把 `portrait_fix_v1.png` 水平翻转，存为 `assets/characters/miles/miles_portrait_master.png`
-2. 把 `full_fix_v2.png` 原样复制为 `assets/characters/miles/miles_full_master.png`
-3. 在 `assets/selections.md` 里写：
-```
-miles_portrait_fix: v1（水平翻转）
-miles_full_fix: v2
-```
-4. **斜挎包的背带以全身母版为准**：翻转后，定妆照的背带方向和全身图不一致。阶段 1 生成设定总图时，背带方向以全身母版为准。
-5. 提交、推送，然后直接进入阶段 1，不用再停。
+第 3 版选定以后，导演和 Claude 会根据选中的图再写具体的修整要求。**在那之前不要执行。**
 
 ---
 
@@ -321,9 +252,9 @@ miles_full_fix: v2
 {USE_STYLE_REFS}
 {ORIGINAL}
 A professional character model sheet of Miles in one image. Layout:
-Left two thirds: four full-body views standing side by side at exactly the same height and proportions: front view, three-quarter view of his left side, exact side profile of his left side, back view. Neutral standing pose, arms slightly away from the body; the back view shows the large white Z on the back of the poncho and the short ponytail.
+Left two thirds: four full-body views standing side by side at exactly the same height and proportions: front view, three-quarter view of his left side, exact side profile of his left side, back view. Neutral standing pose, arms slightly away from the body; the back view shows the medical tape on the back of his head, the hair bun and the scribbles on the back of the jacket.
 Right third, top: six head studies of the same face: front, three-quarter left, profile left, three-quarter right, looking up, looking down.
-Right third, bottom: close-ups of the prosthetic left lower leg, the white earpiece on his left ear, his tired eyes with dark under-eye circles, the hem of the poncho with the cyan reflective band, the AR visor.
+Right third, bottom: close-ups of the medical tape on the back of his head, his forearm covered in marker handwriting, a patch of the jacket with scribbles and a sticky note, the black marker, his eyes.
 Along the bottom edge: a row of plain color swatches of his colors.
 {SHEET}
 {MILES}
@@ -348,10 +279,10 @@ Along the bottom edge: a row of plain color swatches of his colors.
 | `miles_02_threequarter_full.png` | `1024x1536` | `three-quarter full-body view of his left side` |
 | `miles_03_side_full.png` | `1024x1536` | `side profile full-body view of his left side` |
 | `miles_04_back_full.png` | `1024x1536` | `back full-body view` |
-| `miles_05_face_front.png` | `1024x1024` | `front head study, with the AR visor over his eyes` |
+| `miles_05_face_front.png` | `1024x1024` | `front head study` |
 | `miles_06_face_threequarter.png` | `1024x1024` | `three-quarter left head study` |
 | `miles_07_face_profile.png` | `1024x1024` | `left profile head study` |
-| `miles_08_prosthetic.png` | `1792x1008` | `prosthetic leg close-up, shown twice side by side: once with the lights white and the third light broken and dark, once with all working lights glowing red` |
+| `miles_08_details.png` | `1792x1008` | `detail close-ups side by side: the medical tape on the back of his head, his forearm covered in marker handwriting, a patch of the jacket with scribbles and a sticky note` |
 
 ### T1.3 表情九宫格（2 张候选）
 
@@ -362,7 +293,7 @@ Along the bottom edge: a row of plain color swatches of his colors.
 ```
 {KEEP_MILES}
 {USE_STYLE_REFS}
-A 3x3 grid of nine head-and-shoulders close-ups of Miles, the same face at the same slight three-quarter angle in every panel, the AR visor raised onto his hair. Each panel shows a different expression, in this order from top left to bottom right:
+A 3x3 grid of nine head-and-shoulders close-ups of Miles, the same face at the same slight three-quarter angle in every panel. Each panel shows a different expression, in this order from top left to bottom right:
 1 neutral; 2 determined, jaw set, eyes narrowed; 3 exhausted and out of breath, sweat on his face; 4 tender smile, only the left corner of his mouth rises; 5 shocked, eyes wide; 6 holding back tears, lips pressed together; 7 gritted teeth in pain; 8 smug crooked smile, only the left corner of his mouth rises; 9 empty, hollow stare.
 Thin gutters between the panels. {SHEET}
 {STYLE}
@@ -389,6 +320,8 @@ python tools/check_consistency.py --ref assets/characters/miles/master_ref/ --sh
 ---
 
 ## 5. 阶段 2：Mia 和配角
+
+> **暂停**：阶段 2–4 是按旧剧本（外卖骑手）写的，要等新剧本写好后更新。在那之前不要执行。
 
 从这一阶段开始，**风格参考优先用我们自己的图**：`miles_sheet_master.png` 和 `miles_portrait_master.png`，原作截图最多加 1 张。
 

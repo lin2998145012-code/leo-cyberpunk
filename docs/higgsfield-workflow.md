@@ -117,7 +117,7 @@ flat even lighting, no text.
 第二步，从母版生成其他图。选 Multi-reference 模式，参考图 1 放母版，每次只生成一张，不要一次生成多格设定图，那样每格分辨率太低：
 
 ```
-Image 1 is the character Miles. Keep his face, tired eyes, hair, earpiece, rain poncho, prosthetic leg and colors exactly the same as image 1.
+Image 1 is the character Miles. Keep his face, eyes, hair bun, scribbled jacket, forearm handwriting, medical tape and colors exactly the same as image 1.
 Three-quarter view, full body, neutral standing pose, plain light grey background,
 flat even lighting, no text.
 [画风描述块]
@@ -130,7 +130,7 @@ flat even lighting, no text.
 **角色描述块**（每次生成都原样复制，一个字都不改）：
 
 ```
-Miles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length all-black hair tied into a short stubby ponytail at the nape, long uneven bangs, no dyed streaks, no shaved sides; a cheap white courier earpiece with a short microphone boom on his left ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.
+Miles: a 19-year-old wiry young man, about 170 cm; narrow face, sharp chin; lively narrow eyes with pale teal-grey irises and faint shadows under them, a mischievous crooked half-smile; messy black hair tied up into a small loose bun on top of his head, loose strands falling around his face, no shaved sides; a square of white medical tape on the back of his head covering a hidden data port; an oversized off-white work jacket reaching mid-thigh with the sleeves rolled up to the elbows, the whole jacket covered in handwritten black marker scribbles (illegible notes, numbers, arrows, small doodles and crossed-out lines, a few lines crossed out in red marker) and three pale cyan sticky notes stuck on it; both forearms also covered in black marker handwriting; a black marker tucked behind his ear; a fitted black high-neck shirt underneath, black cargo pants, chunky white sneakers with marker doodles.
 ```
 
 **画风描述块**（不写任何作品名和工作室名，只描述特征，依据是原片参考分析）：
@@ -159,7 +159,7 @@ Miles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; n
 **提示词模板**（Nano Banana Pro，Multi-reference）：
 
 ```
-Images 1-4 are reference sheets of the same character, Miles. Keep his face, tired eyes, hair, earpiece, rain poncho, prosthetic leg and colors exactly as in the references.
+Images 1-4 are reference sheets of the same character, Miles. Keep his face, eyes, hair bun, scribbled jacket, forearm handwriting, medical tape and colors exactly as in the references.
 [本镜头内容：景别、机位、动作、表情]
 [本段光线块]
 [画风描述块]

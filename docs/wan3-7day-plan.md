@@ -1,6 +1,8 @@
 # Wan 3.0 免费 7 天作战计划
 
 > 账号：Higgsfield Plus。Wan 3.0 在网页上 7 天不限量。
+> **注意（2026-10-15）**：故事已改为"脑仓骑手"，Miles 改为第 3 版"备忘录"造型。本文的镜头提示词是按旧剧本写的，新剧本定下后会更新；角色描述以[人物档案](bible/characters.md)和 [Codex 执行文档](codex-execution.md)为准。
+>
 > 相关文档：[导演方案](film-overclock.md)　[前期制作](preproduction.md)　[Higgsfield 制作流程](higgsfield-workflow.md)　[Codex 执行文档](codex-execution.md)
 >
 > **更新**：静态图（设定包、场景、道具、关键帧）改由 Codex 用 GPT Image 2.5 生成。下文写着 Nano Banana Pro 的步骤，都换成 Codex 来做。
@@ -82,7 +84,7 @@ Higgsfield 上的 Wan 3.0 于 2026 年 8 月上线，分 **Wan 3.0** 和 **Wan 3
 
 **角色描述块**
 ```
-Miles: a 19-year-old wiry young man, about 168 cm, slightly hunched shoulders; narrow face, sharp chin; half-lidded tired eyes with dark under-eye circles and pale teal-grey irises; messy chin-length all-black hair tied into a short stubby ponytail at the nape, long uneven bangs, no dyed streaks, no shaved sides; a cheap white courier earpiece with a short microphone boom on his left ear; a thin transparent cyan AR visor across his eyes; a thigh-length deep-teal hooded rain poncho with a bright cyan reflective band along the hem and a large white Z logo printed on the back, hood down; under it a charcoal one-piece work jumpsuit with sleeves rolled up, the left leg cut off at the knee; a teal waterproof delivery bag slung across his chest; his left lower leg is a cheap scratched gunmetal prosthetic with a cracked casing and a row of five small lights; a short black rain boot on his right foot.
+Miles: a 19-year-old wiry young man, about 170 cm; narrow face, sharp chin; lively narrow eyes with pale teal-grey irises and faint shadows under them, a mischievous crooked half-smile; messy black hair tied up into a small loose bun on top of his head, loose strands falling around his face, no shaved sides; a square of white medical tape on the back of his head covering a hidden data port; an oversized off-white work jacket reaching mid-thigh with the sleeves rolled up to the elbows, the whole jacket covered in handwritten black marker scribbles (illegible notes, numbers, arrows, small doodles and crossed-out lines, a few lines crossed out in red marker) and three pale cyan sticky notes stuck on it; both forearms also covered in black marker handwriting; a black marker tucked behind his ear; a fitted black high-neck shirt underneath, black cargo pants, chunky white sneakers with marker doodles.
 ```
 
 **画风描述块**
@@ -122,9 +124,9 @@ no 3D look.
 **关键帧**（Nano Banana Pro，Multi-reference；图 1 正面脸、图 2 3/4 脸、图 3 侧脸、图 4 正面全身）：
 
 ```
-Images 1-4 are reference sheets of the same character, Miles. Keep his face, tired eyes, hair, earpiece, rain poncho, prosthetic leg and colors exactly as in the references.
-Close-up, three-quarter view of the left side of his face, so the earpiece on his left
-ear is visible. He sits on an electric scooter in the rain, looking down at a phone
+Images 1-4 are reference sheets of the same character, Miles. Keep his face, eyes, hair bun, scribbled jacket, forearm handwriting, medical tape and colors exactly as in the references.
+Close-up, three-quarter view of the left side of his face, so the marker notes on his
+forearm are visible. He sits on an electric scooter in the rain, looking down at a phone
 on the handlebar, listening to a voice message. His eyes are soft, a faint smile at one
 corner of his mouth, the thin cyan AR visor in front of his eyes.
 Night, rain, deep indigo ambient light, cyan neon rim light from the left, cyan HUD glow on
@@ -157,7 +159,7 @@ his face. Static camera, very slight push in.
 **关键帧**（Nano Banana Pro，参考图 1 正面全身、2 3/4 全身、3 正侧面全身、4 义肢特写）：
 
 ```
-Images 1-4 are reference sheets of the same character, Miles. Keep his face, tired eyes, hair, earpiece, rain poncho, prosthetic leg and colors exactly as in the references.
+Images 1-4 are reference sheets of the same character, Miles. Keep his face, eyes, hair bun, scribbled jacket, forearm handwriting, medical tape and colors exactly as in the references.
 Low-angle full shot. He has just landed in a crouch on the roof of a car in a traffic jam,
 one hand on the roof, his prosthetic left leg bent under him, the roof dented around his
 feet, rain splashing outward. He looks up past the camera, determined.
@@ -220,7 +222,7 @@ the camera tilts down slightly to follow him, strong fisheye perspective.
 
 **首帧**（Nano Banana Pro，图 1 正面脸、图 2 3/4 脸、图 3 推起目镜的正脸、图 4 筋疲力尽的表情）：
 ```
-Images 1-4 are reference sheets of the same character, Miles. Keep his face, tired eyes, hair, earpiece, rain poncho and colors exactly as in the references.
+Images 1-4 are reference sheets of the same character, Miles. Keep his face, eyes, hair bun, scribbled jacket, forearm handwriting, medical tape and colors exactly as in the references.
 Close-up, front view. He kneels in a spotless white lobby, exhausted and out of breath,
 sweat on his face, the thin cyan AR visor still over his eyes.
 Pale sterile white-cyan light, low saturation, clean bright interior.
